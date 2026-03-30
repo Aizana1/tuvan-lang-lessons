@@ -1,0 +1,233 @@
+// ─── APP SHELL ─────────────────────────────────────────────────────────────
+.app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+// ─── SIDEBAR ───────────────────────────────────────────────────────────────
+.sidebar {
+  width: 280px;
+  min-width: 280px;
+  background: var(--bg-sidebar);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 2px 0 16px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 10;
+
+  &-header {
+    padding: 1.2rem 1rem 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      transparent 100%
+    );
+  }
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.5rem;
+    .flag-strip {
+      display: flex;
+      flex-direction: column;
+      width: 5px;
+      height: 36px;
+      border-radius: 3px;
+      overflow: hidden;
+      flex-shrink: 0;
+      span {
+        flex: 1;
+      }
+      .flag-blue {
+        background: #1565c0;
+      }
+      .flag-white {
+        background: #fff;
+      }
+      .flag-gold {
+        background: var(--gold);
+      }
+    }
+    h1 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.2;
+      small {
+        display: block;
+        font-size: 0.7rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+
+  .gold-stripe {
+    height: 3px;
+    background: var(--gold);
+    margin: 0.8rem 0 0;
+  }
+
+  &-controls {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &-search {
+    padding: 0 1rem 0.6rem;
+    input {
+      width: 100%;
+      padding: 6px 10px;
+      border-radius: 8px;
+      border: none;
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      font-size: 0.8rem;
+      outline: none;
+      transition: background 0.2s;
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.4);
+      }
+      &:focus {
+        background: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+
+  .lesson-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 0 1rem;
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 2px;
+    }
+  }
+
+  &-footer {
+    padding: 0.75rem 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+  }
+}
+
+.chapter-label {
+  padding: 0.4rem 1rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.35);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 0.5rem;
+}
+
+// ─── MAIN ──────────────────────────────────────────────────────────────────
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.topbar {
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  padding: 0.6rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  min-height: 52px;
+  .breadcrumb {
+    font-size: 0.82rem;
+    color: var(--text2);
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+  }
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--bg);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 3px;
+  }
+}
+
+// ─── MOBILE ────────────────────────────────────────────────────────────────
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: var(--text);
+  padding: 4px;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 8;
+}
+
+@media (max-width: 860px) {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+    &.open {
+      transform: none;
+    }
+  }
+  .overlay.open {
+    display: block;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  .main {
+    width: 100%;
+  }
+  .content {
+    padding: 1rem;
+  }
+  .topbar {
+    padding: 0.5rem 1rem;
+  }
+}

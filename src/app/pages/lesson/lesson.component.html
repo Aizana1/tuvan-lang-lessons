@@ -1,0 +1,24 @@
+@if (lesson(); as l) {
+  <app-lesson-hero [lesson]="l" />
+
+  @for (section of l.sections; track section.id) {
+    <app-section-card [section]="section" [lessonId]="l.id" />
+  }
+
+  <nav class="lesson-nav" aria-label="Навигация по урокам">
+    @if (hasPrev()) {
+      <button class="btn btn-ghost" (click)="navigate(lessonId() - 1)">
+        ← {{ langSvc.lang() === "en" ? "Previous" : "Предыдущий" }}
+      </button>
+    }
+    @if (hasNext()) {
+      <button class="btn btn-primary" (click)="navigate(lessonId() + 1)">
+        {{ langSvc.lang() === "en" ? "Next" : "Следующий" }} →
+      </button>
+    }
+  </nav>
+} @else {
+  <div class="welcome">
+    <p style="color: var(--text3)">Урок не найден.</p>
+  </div>
+}

@@ -1,0 +1,25 @@
+<div class="phrase-item">
+  <div class="phrase-tuvan">
+    <span>{{ phrase.tuvan }}</span>
+    <app-audio-btn
+      [btnId]="sectionId + '-' + phrase.tuvan"
+      [src]="phrase.audioSrc"
+      label="▶"
+    />
+  </div>
+
+  <div class="phrase-translation">
+    @switch (langSvc.lang()) {
+      @case ("en") {
+        <div class="phrase-en">{{ phrase.en }}</div>
+      }
+      @case ("tuvan") {
+        <div class="phrase-ru">{{ phrase.ru }}</div>
+        <div class="phrase-en">{{ phrase.en }}</div>
+      }
+      @default {
+        <div class="phrase-ru">{{ phrase.ru }}</div>
+      }
+    }
+  </div>
+</div>

@@ -1,0 +1,351 @@
+// ─── LESSON HERO ───────────────────────────────────────────────────────────
+.lesson-hero {
+  background: var(--banner);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    right: 40px;
+    bottom: -60px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: rgba(245, 166, 35, 0.1);
+  }
+
+  .hero-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-icon {
+    font-size: 2.5rem;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .lesson-num {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.3rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    line-height: 1.25;
+  }
+  .hero-sub {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.75);
+  }
+  .hero-tuvan {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 0.4rem;
+    font-style: italic;
+  }
+  .hero-audio {
+    margin-top: 1rem;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.stripe {
+  height: 4px;
+  background: var(--gold);
+  border-radius: 2px;
+  margin: 1rem 0;
+}
+
+// ─── SECTION CARD ──────────────────────────────────────────────────────────
+.section-card {
+  background: var(--bg-card);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1.25rem;
+  cursor: pointer;
+  background: var(--bg-section);
+  border-bottom: 1px solid transparent;
+  transition: background 0.15s;
+  user-select: none;
+  &:hover {
+    background: var(--blue-pale);
+  }
+  &.open {
+    border-bottom-color: var(--border);
+  }
+
+  [data-theme="dark"] &:hover {
+    background: #1e2d44;
+  }
+
+  &-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    flex: 1;
+    color: var(--text);
+  }
+  &-tuvan {
+    font-size: 0.78rem;
+    color: var(--text-tuvan);
+    margin-left: 0.25rem;
+  }
+}
+
+.chevron {
+  margin-left: auto;
+  flex-shrink: 0;
+  color: var(--text3);
+  transition: transform 0.2s;
+  font-size: 0.8rem;
+}
+.section-head.open .chevron {
+  transform: rotate(180deg);
+}
+
+.section-body {
+  padding: 1.25rem;
+  display: none;
+  &.open {
+    display: block;
+    animation: fadeIn 0.25s ease;
+  }
+}
+
+.section-intro {
+  font-size: 0.85rem;
+  color: var(--text2);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// ─── GRAMMAR ───────────────────────────────────────────────────────────────
+.grammar-rule {
+  background: var(--bg-exercise);
+  border-radius: 10px;
+  border-left: 4px solid var(--blue);
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 0.75rem;
+  h4 {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 0.5rem;
+  }
+  p {
+    font-size: 0.85rem;
+    color: var(--text2);
+    line-height: 1.7;
+  }
+  [data-theme="dark"] & h4 {
+    color: #79b8ff;
+  }
+}
+
+// ─── PHRASES ───────────────────────────────────────────────────────────────
+.phrase-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.phrase-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  background: var(--bg-section);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  &.dialogue {
+    border-left: 4px solid var(--gold);
+  }
+}
+
+.phrase-tuvan {
+  font-weight: 700;
+  color: var(--text-tuvan);
+  font-size: 0.92rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.phrase-ru {
+  font-size: 0.85rem;
+  color: var(--text-ru);
+}
+.phrase-en {
+  font-size: 0.82rem;
+  color: var(--text-en);
+  font-style: italic;
+}
+.phrase-translation {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .phrase-item {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ─── VOCABULARY ────────────────────────────────────────────────────────────
+.word-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.6rem;
+}
+
+.word-card {
+  background: var(--bg-section);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  padding: 0.7rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  .word-tuvan {
+    font-weight: 700;
+    color: var(--text-tuvan);
+    font-size: 1rem;
+  }
+  .word-ru {
+    font-size: 0.82rem;
+    color: var(--text-ru);
+  }
+  .word-en {
+    font-size: 0.78rem;
+    color: var(--text-en);
+    font-style: italic;
+  }
+  .word-audio {
+    margin-top: 5px;
+  }
+}
+
+// ─── EXERCISES ─────────────────────────────────────────────────────────────
+.exercise-block {
+  background: var(--bg-exercise);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 0.75rem;
+  h4 {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #7b1fa2;
+    margin-bottom: 0.5rem;
+  }
+  [data-theme="dark"] & h4 {
+    color: #ce93d8;
+  }
+}
+
+.exercise-instruction {
+  font-size: 0.85rem;
+  color: var(--text2);
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+.exercise-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ex-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  background: var(--bg-card);
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  .ex-tuvan {
+    font-weight: 700;
+    color: var(--text-tuvan);
+    font-size: 0.88rem;
+  }
+  .ex-trans {
+    font-size: 0.82rem;
+    color: var(--text2);
+  }
+}
+
+@media (max-width: 640px) {
+  .ex-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ─── TEXT SECTIONS ─────────────────────────────────────────────────────────
+.text-content {
+  background: var(--bg-section);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  padding: 1rem 1.2rem;
+  font-size: 0.87rem;
+  color: var(--text2);
+  line-height: 1.8;
+  white-space: pre-line;
+}
+
+// ─── WELCOME ───────────────────────────────────────────────────────────────
+.welcome {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text2);
+  h2 {
+    font-size: 1.6rem;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+  p {
+    font-size: 0.95rem;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}

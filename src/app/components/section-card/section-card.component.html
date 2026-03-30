@@ -1,0 +1,103 @@
+<div class="section-card">
+  <div class="section-head" [class.open]="isOpen()" (click)="toggle()">
+    <span [class]="badgeClass">{{ badgeLabel }}</span>
+    <span class="section-head-title">
+      {{ langSvc.lang() === "en" ? section.titleEn : section.titleRu }}
+    </span>
+    @if (section.titleTuvan) {
+      <span class="section-head-tuvan">{{ section.titleTuvan }}</span>
+    }
+    <span class="chevron">▾</span>
+  </div>
+
+  <div class="section-body" [class.open]="isOpen()">
+    @if (section.type === "text" && section.text) {
+      <div class="text-content">
+        {{ langSvc.lang() === "en" ? section.text.en : section.text.ru }}
+      </div>
+    }
+
+    @if (section.type === "grammar" && section.rules) {
+      @for (rule of section.rules; track rule.titleRu) {
+        <div class="grammar-rule">
+          <h4>{{ langSvc.lang() === "en" ? rule.titleEn : rule.titleRu }}</h4>
+          <p>{{ langSvc.lang() === "en" ? rule.en : rule.ru }}</p>
+        </div>
+      }
+    }
+
+    @if (
+      (section.type === "phrases" || section.type === "dialogue") &&
+      section.phrases
+    ) {
+      <app-audio-btn
+        [btnId]="'section-' + section.id"
+        [src]="''"
+        label="▶ Слушать весь раздел"
+      />
+      <div class="phrase-list" style="margin-top: 0.75rem">
+        @for (phrase of section.phrases; track phrase.tuvan) {
+          <app-phrase-item [phrase]="phrase" [sectionId]="section.id" />
+        }
+      </div>
+    }
+
+    @if (section.type === "vocabulary" && section.words) {
+      <div class="word-grid">
+        @for (word of section.words; track word.tuvan) {
+          <app-word-card [word]="word" />
+        }
+      </div>
+    }
+
+    @if (section.type === "exercise" && section.exercises) {
+      @for (ex of section.exercises; track ex.titleRu) {
+        <div class="exercise-block">
+          <h4>{{ langSvc.lang() === "en" ? ex.titleEn : ex.titleRu }}</h4>
+          <div class="exercise-instruction">
+            {{ langSvc.lang() === "en" ? ex.instrEn : ex.instrRu }}
+          </div>
+          <div class="exercise-examples">
+            @for (row of ex.examples; track row.tuvan) {
+              <div class="ex-row">
+                <div class="ex-tuvan">
+                  {{ row.tuvan }}
+                  <app-audio-btn
+                    [btnId]="'ex-' + row.tuvan"
+                    [src]="''"
+                    label="▶"
+                  />
+                </div>
+                <div class="ex-trans">
+                  @if (langSvc.lang() === "en") {
+                    {{ row.en }}
+                  } @else {
+                    {{ row.ru }}
+                  }
+                </div>
+              </div>
+            }
+          </div>
+        </div>
+      }
+    }
+
+    @if (section.type === "answers" && section.exercises) {
+      @for (ex of section.exercises; track ex.titleRu) {
+        <div class="exercise-block answers-block">
+          <h4>{{ langSvc.lang() === "en" ? ex.titleEn : ex.titleRu }}</h4>
+          <div class="exercise-examples">
+            @for (row of ex.examples; track row.tuvan) {
+              <div class="ex-row">
+                <div class="ex-tuvan">{{ row.tuvan }}</div>
+                <div class="ex-trans">
+                  {{ langSvc.lang() === "en" ? row.en : row.ru }}
+                </div>
+              </div>
+            }
+          </div>
+        </div>
+      }
+    }
+  </div>
+</div>

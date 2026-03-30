@@ -1,0 +1,35 @@
+<div class="lesson-hero">
+  <div class="hero-top">
+    <div class="hero-icon">{{ lesson.icon }}</div>
+
+    <div class="hero-text">
+      <div class="lesson-num">
+        @if (langSvc.lang() === "en") {
+          Lesson {{ lesson.id }}
+        } @else {
+          Урок {{ lesson.id }}
+        }
+      </div>
+
+      <h2>
+        @if (langSvc.lang() === "en") {
+          {{ lesson.titleEn }}
+        } @else {
+          {{ lesson.titleRu }}
+        }
+      </h2>
+
+      <div class="hero-sub">
+        @if (langSvc.lang() === "en") {
+          {{ lesson.subEn }}
+        } @else {
+          {{ lesson.subRu }}
+        }
+      </div>
+
+      <div class="hero-tuvan">{{ lesson.titleTuvan }}</div>
+    </div>
+  </div>
+
+  <div class="stripe"></div>
+</div>

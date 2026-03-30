@@ -1,0 +1,96 @@
+<aside class="sidebar">
+  <div class="sidebar-header">
+    <div class="sidebar-logo">
+      <div class="flag-strip">
+        <span class="flag-blue"></span>
+        <span class="flag-white"></span>
+        <span class="flag-gold"></span>
+      </div>
+      <h1>
+        Тывалап
+        <small>чугаалажыылыңар</small>
+      </h1>
+    </div>
+    <div class="gold-stripe"></div>
+  </div>
+
+  <div class="sidebar-controls">
+    <button
+      class="btn-theme"
+      (click)="themeSvc.toggle()"
+      [attr.aria-label]="themeLabel"
+    >
+      {{ themeIcon }} {{ themeLabel }}
+    </button>
+
+    <button
+      class="btn-lang"
+      [class.active]="langSvc.lang() === 'ru'"
+      (click)="langSvc.setLang('ru')"
+    >
+      РУС
+    </button>
+
+    <button
+      class="btn-lang"
+      [class.active]="langSvc.lang() === 'en'"
+      (click)="langSvc.setLang('en')"
+    >
+      ENG
+    </button>
+  </div>
+
+  <div class="sidebar-search">
+    <input
+      type="text"
+      placeholder="Поиск урока..."
+      [ngModel]="searchQuery()"
+      (ngModelChange)="searchQuery.set($event)"
+    />
+  </div>
+
+  <div class="lesson-list" role="list">
+    @if (filteredLessons().length === 0) {
+      <div class="chapter-label">Ничего не найдено</div>
+    }
+
+    @for (lesson of filteredLessons(); track lesson.id) {
+      <div
+        class="lesson-item"
+        role="listitem"
+        [class.active]="activeLessonId === lesson.id"
+        (click)="select(lesson.id)"
+      >
+        <span class="icon">{{ lesson.icon }}</span>
+
+        <div class="info">
+          <div class="num">
+            @if (langSvc.lang() === "en") {
+              Lesson {{ lesson.id }}
+            } @else {
+              Урок {{ lesson.id }}
+            }
+          </div>
+          <div class="title">
+            @if (langSvc.lang() === "en") {
+              {{ lesson.titleEn }}
+            } @else {
+              {{ lesson.titleRu }}
+            }
+          </div>
+          <div class="sub">
+            @if (langSvc.lang() === "en") {
+              {{ lesson.subEn }}
+            } @else {
+              {{ lesson.subRu }}
+            }
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+
+  <div class="sidebar-footer">
+    К.А. Бичелдей · Тывалап чугаалажыылыңар, 2012
+  </div>
+</aside>

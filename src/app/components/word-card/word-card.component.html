@@ -1,0 +1,19 @@
+<div class="word-card">
+  <div class="word-tuvan">{{ word.tuvan }}</div>
+
+  @if (langSvc.lang() !== "tuvan") {
+    <div class="word-ru">{{ word.ru }}</div>
+  }
+
+  @if (langSvc.lang() === "en") {
+    <div class="word-en">{{ word.en }}</div>
+  }
+
+  <div class="word-audio">
+    <app-audio-btn
+      [btnId]="'word-' + word.tuvan"
+      [src]="word.audioSrc"
+      label="▶"
+    />
+  </div>
+</div>

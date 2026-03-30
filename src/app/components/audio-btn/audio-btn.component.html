@@ -1,0 +1,13 @@
+<button class="audio-btn"
+  [class.playing]="audioSvc.playingId() === btnId"
+  (click)="audioSvc.play(btnId, src)"
+  [attr.aria-label]="label">
+  <svg viewBox="0 0 24 24" fill="currentColor">
+    @if (audioSvc.playingId() === btnId) {
+      <rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>
+    } @else {
+      <polygon points="5,3 19,12 5,21"/>
+    }
+  </svg>
+  {{ audioSvc.playingId() === btnId ? 'Пауза' : label }}
+</button>
