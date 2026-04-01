@@ -5,6 +5,7 @@ import { LessonsService } from "../../core/services/lessons.service";
 import { LanguageService } from "../../core/services/language.service";
 import { LessonHeroComponent } from "../../components/lesson-hero/lesson-hero.component";
 import { SectionCardComponent } from "../../components/section-card/section-card.component";
+import { Meta, Title } from "@angular/platform-browser";
 
 @Component({
   selector: "app-lesson",
@@ -14,6 +15,8 @@ import { SectionCardComponent } from "../../components/section-card/section-card
   styleUrls: ["./lesson.component.scss"],
 })
 export class LessonComponent {
+  private meta = inject(Meta);
+  private title = inject(Title);
   readonly id = input<string>("");
 
   private router = inject(Router);
@@ -31,6 +34,33 @@ export class LessonComponent {
   hasNext = computed(() => this.lessonId() < this.totalLessons);
 
   constructor() {
+    effect(() => {
+      const l = this.lesson();
+      if (!l) return;
+
+      // Заголовок вкладки
+      this.title.setTitle(
+        `${l.titleRu} - Тыва дыл — Тувинский язык - Tuvan Language`
+      );
+
+      // Мета-описание
+      this.meta.updateTag({
+        name: "description",
+        content: `${l.titleRu}. Тувинский язык — урок ${l.id}: ${l.titleRu}`,
+      });
+
+      // Canonical URL
+      this.meta.updateTag({
+        property: "og:url",
+        content: `https://твой-домен.com/lesson/${l.id}`,
+      });
+
+      this.meta.updateTag({
+        property: "og:title",
+        content: `${l.titleRu} — Тыва дыл — Тувинский язык - Tuvan Language`,
+      });
+    });
+
     effect(() => {
       this.id();
       document

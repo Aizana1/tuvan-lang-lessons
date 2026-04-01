@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tuvan-language.space/sitemap.xml
