@@ -419,7 +419,7 @@ export class LessonsService {
       icon: "🔤",
       titleRu: "Урок 2",
       titleEn: "Lesson 2",
-      titleTuvan: "2 кичээл",
+      titleTuvan: "Ийиги кичээл",
       subRu: "Гласные и согласные. Знакомство. Счёт до 100.",
       subEn: "Vowels & Consonants. Introduction. Counting to 100.",
       sections: [
@@ -428,19 +428,27 @@ export class LessonsService {
           type: "grammar",
           titleRu: "Гласные и согласные",
           titleEn: "Vowels and Consonants",
-          titleTuvan: "Ажык болгаш туттунган үннер",
+          titleTuvan: "Ажык болгаш ажык эвес үннер",
           rules: [
             {
               titleRu: "24 гласных",
               titleEn: "Vowels — 24",
-              ru: "Краткие: а, э, и, о, ө, у, ү, ы. Долгие: аа, ээ, ии, оо, өө, уу, үү, ыы. Фарингализованные: а, э, и, о, ө, у, ү, ы.",
-              en: "Short: а, э, и, о, ө, у, ү, ы. Long: аа, ээ, ии, оо, өө, уу, үү, ыы. Pharyngealized: а, э, и, о, ө, у, ү, ы.",
+              ru: `Гласных звуков в тувинском языке 24: краткие гласные : а, э, и, о, ө, у, ү, ы; долгие: аа, ээ, ии, оо, өө, уу, үү, ыы; фарингализованные: аъ, эъ, иъ, оъ, өъ, уъ, үъ, ыъ.
+              Фарингализованные гласные произносятся как бы сдавленным голосом при напряженном положении глотки. Они обозначаются сочетанием гласной с твердым знаком в словах "аът – лошадь"; "эът – мясо"; "чүък – груз"; "оът – трава"; "дүъш – полдень"; "каът – слой, этаж"; "чаъс – дождь"; "чөъп – гуща"; "аъш-чем – пища". 
+              В остальных словах они пишутся одинарными буквами, т.е. как обычные краткие гласные, но в мини- словариках в конце пособия они обозначены по схеме «гласный + ъ». `,
+              en: `There are 24 vowel sounds in the Tuvan language: short vowels: а, э, и, о, ө, у, ү, ы; long vowels: аа, ээ, ии, оо, өө, уу, үү, ыы; pharyngealized vowels: аъ, эъ, иъ, оъ, өъ, уъ, үъ, ыъ.
+              Pharyngealized vowels are pronounced as if with a stifled voice and a tense pharynx. They are indicated by a combination of a vowel with a hard sign in the words "aът - horse"; "эът - meat"; "чүък - cargo"; "оът - grass"; "дүъш - afternoon"; "каът - layer, floor"; "чаъс - rain"; "чөъп - thicket"; "аъш-чем - food".
+              In other words they are written with single letters, i.e. like ordinary short vowels, but in the mini-dictionaries at the end of the manual they are designated according to the scheme “vowel + ъ”.`,
             },
             {
               titleRu: "18 согласных",
               titleEn: "Consonants — 18",
-              ru: "Сильные: б, г, д, ж, з. Слабые: -п, -к, -т, -ч, -с. Сверхслабые: м, н, ң, л, р, й, в.",
-              en: "Strong: б, г, д, ж, з. Weak: -п, -к, -т, -ч, -с. Extra-weak: м, н, ң, л, р, й, в.",
+              ru: `Согласных звуков в тувинском языке 18: т, п, с, ш, х; слабые: т-д, п-б, с-з, ш-ж, к-г, ч; сверхслабые: й, л, м, н, ё, р, г.
+              Сильные согласные произносятся всегда глухо и употребляются только в начале слов: "сан – счет, число"; "паш – котел"; "тас – лысый"; "шак – время, часы"; "хол – рука". 
+              Слабые согласные употребляются в любой позиции и могут быть глухими и звонкими, в зависимости от позиции и качества сочетаемых согласных: "час (слабые ч, с)", "эзир (слабый з)", "дөжү (слабые д, ж)".`,
+              en: `There are 18 consonants in the Tuvan language: т, п, с, ш, х; weak consonants: т-д, п-б, с-з, ш-ж, к-г, ч; superweak consonants: й, л, м, н, ё, р, г.
+Strong consonants are always pronounced voiceless and are used only at the beginning of words: "сан – account, number"; "паш – cauldron"; "тас – bald"; "шак – time, hours"; "хол – hand".
+Weak consonants are used in any position and can be voiceless or voiced, depending on the position and quality of the consonants they combine: "час (weak ch, s)", "эзир (weak z)", "дөжү (weak d, zh)".`,
             },
           ],
         },
@@ -452,33 +460,39 @@ export class LessonsService {
           titleTuvan: "Таныжылга",
           phrases: [
             {
-              tuvan: "Таныжып алыылыңар.",
+              tuvan: "Таныжып көрүңер.",
               ru: "Познакомьтесь, пожалуйста.",
-              en: "Please meet.",
+              en: "Please get acquainted to each other.",
               audioSrc: "",
             },
             {
-              tuvan: "Адыңар кым-дыр?",
+              tuvan: "Адыңар кымыл?",
               ru: "Как вас зовут?",
               en: "What is your name?",
               audioSrc: "",
             },
             {
-              tuvan: "Адым … дир.",
+              tuvan: "Мээң адым...",
               ru: "Меня зовут …",
               en: "My name is …",
               audioSrc: "",
             },
             {
-              tuvan: "Аның ады … дир.",
+              tuvan: "Ооң ады...",
               ru: "Его/её зовут …",
               en: "His/Her name is …",
               audioSrc: "",
             },
             {
-              tuvan: "Уттуп калдым, — силерниң адыңарны.",
-              ru: "Извините, я забыл(а) ваше имя.",
+              tuvan: "Буруулуг болдум, силерниң адыңарны уткан-дыр мен",
+              ru: "Извините, я забыл, как вас зовут.",
               en: "I'm sorry, I forgot your name.",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Ооң ады кым ийик?",
+              ru: "Как его/её зовут? ",
+              en: "What's his/her name?",
               audioSrc: "",
             },
           ],
@@ -486,8 +500,9 @@ export class LessonsService {
         {
           id: "l2-numbers",
           type: "grammar",
-          titleRu: "Счёт до 100",
-          titleEn: "Counting to 100",
+          titleRu:
+            "Счёт до 100. Порядок слов в предложении. Вопросительные слова ",
+          titleEn: "Counting to 100. Word order in a sentence. Question words ",
           titleTuvan: "Санавыр",
           rules: [
             {
@@ -499,8 +514,47 @@ export class LessonsService {
             {
               titleRu: "Числа 11—90",
               titleEn: "Numbers 11—90",
-              ru: "20 — чээрби, 30 — үжен, 40 — дөртен, 50 — бежен, 60 — алдан, 70 — чеден, 80 — сезен, 90 — тозан. Составные: 22 = чээрби ийи, 15 = он беш, 71 = чеден бир.",
-              en: "20 — чээрби, 30 — үжен, 40 — дөртен, 50 — бежен, 60 — алдан, 70 — чеден, 80 — сезен, 90 — тозан. Compound: 22 = чээрби ийи, 15 = он беш, 71 = чеден бир.",
+              ru: `20 — чээрби, 30 — үжен, 40 — дөртен, 50 — бежен, 60 — алдан, 70 — чеден, 80 — сезен, 90 — тозан.`,
+              en: "20 — чээрби, 30 — үжен, 40 — дөртен, 50 — бежен, 60 — алдан, 70 — чеден, 80 — сезен, 90 — тозан.",
+            },
+            {
+              titleRu: "Числа 11—90",
+              titleEn: "Numbers 11—90",
+              ru: `В составных числительных сначала называется десяток, а затем – единица: 22 = чээрби ийи (дословно: двадцать два), 15 = он беш (дословно: десять пять), 71 = чеден бир (дословно: семьдесят один).
+              Как определение, числительные всегда употребляются перед существительными; при этом форма существительного не связана с числительным: пять дней – беш хонук (дословно: пять день); три карандаша – үш карандаш (дословно: три карандаш); сто дней – чүс хүн (дословно: сто день).`,
+              en: `In compound numerals, the ten is named first, followed by the unit: 22 = чээрби ийи (literally: twenty-two), 15 = он беш (literally: ten five), 71 = чеден бир (literally: seventy-one). 
+              As an adjective, numerals are always used before nouns; in this case, the noun form is not related to the numeral: five days – беш хонук (literally: five day); three pencils – үш карандаш (literally: three pencil); one hundred days – чүс хүн (literally: one hundred day).`,
+            },
+            {
+              titleRu: "Порядок слов в предложении",
+              titleEn: "Word order in a sentence",
+              ru: `<ol><li>Сказуемое в тувинском предложении всегда стоит на последнем месте.</li>
+              <li>Определение всегда стоит перед определяемым словом:
+              <em>кызыл тук</em> – кызыл (красный), тук (знамя);
+              <em>улуг бажың</em> – улуг (большой), бажың (дом).
+              </li>
+              </ol>`,
+              en: `<ol><li>The predicate in a Tuvan sentence always comes last.</li>
+              <li>The attribute always comes before the word it modifies: <em>кызыл тук</em> – кызыл (red), тук (flag); <em>улуг бажың</em> – улуг (big), бажың (house).
+              </li>
+              </ol>`,
+            },
+            {
+              titleRu: `Вопросительные слова "КТО?", "ЧТО?"`,
+              titleEn: `Question words "WHO?", "WHAT?"`,
+              ru: `<ul>Вопрос <b>кым?</b> (кто?) употребляется только по отношению к человеку.
+              <li>Кто это? – Бо кымыл?</li>
+              <li>Кто скажет? – Кым чугаалаарыл?</li>
+              <li>Кто пришел? – Кым келди?</li>
+              </ul>
+              <ul>Вопрос <b>чүү?</b> (что?) ставится во всех остальных случаях:
+              <li>Что это? – Бо чүл?</li>
+              <li>Кто это (о животных)? – Бо чүл?</li>
+              <li>Что надо? – Чүү херегил?</li>
+              <li>Что вы сказали? – Чүү дидиңер?</li>
+              </ul>
+              `,
+              en: `1. The predicate in a Tuvan sentence always comes last. 2. The attribute always comes before the word it modifies: кызыл тук – кызыл (red), тук (flag); улуга бажың – улуг (big), бажың (house).`,
             },
           ],
         },
@@ -512,25 +566,140 @@ export class LessonsService {
           words: [
             { tuvan: "ат", ru: "имя", en: "name", audioSrc: "" },
             {
-              tuvan: "таныжыр",
+              tuvan: "таныжар",
               ru: "знакомиться",
               en: "to get acquainted",
               audioSrc: "",
             },
             { tuvan: "мээң", ru: "мой", en: "my", audioSrc: "" },
-            { tuvan: "сениң", ru: "твой", en: "your", audioSrc: "" },
-            { tuvan: "ооң", ru: "его", en: "his", audioSrc: "" },
+            { tuvan: "сээң", ru: "твой", en: "your", audioSrc: "" },
+            { tuvan: "ооң", ru: "его/её", en: "his/her", audioSrc: "" },
+            { tuvan: "аңаа", ru: "ему/ей", en: "to him/her", audioSrc: "" },
+            {
+              tuvan: "адаар",
+              ru: "звать",
+              en: "to call (by name)",
+              audioSrc: "",
+            },
             { tuvan: "уттур", ru: "забыть", en: "to forget", audioSrc: "" },
             { tuvan: "сактыр", ru: "помнить", en: "to remember", audioSrc: "" },
-            { tuvan: "чурттаар", ru: "жить", en: "to live", audioSrc: "" },
-            { tuvan: "хоорай", ru: "город", en: "city", audioSrc: "" },
             {
-              tuvan: "дүкюмел",
+              tuvan: "сактып алыр",
+              ru: "запомнить",
+              en: "to remember",
+              audioSrc: "",
+            },
+            {
+              tuvan: "чурттакчы",
+              ru: "житель",
+              en: "resident",
+              audioSrc: "",
+            },
+            {
+              tuvan: "чурттаар",
+              ru: "жить",
+              en: "to live",
+              audioSrc: "",
+            },
+            {
+              tuvan: "бодум",
+              ru: "сам(а)",
+              en: "by my own, by myself",
+              audioSrc: "",
+            },
+            {
+              tuvan: "бистиң",
+              ru: "наш",
+              en: "our",
+              audioSrc: "",
+            },
+            {
+              tuvan: "бистиң",
+              ru: "наш",
+              en: "our",
+              audioSrc: "",
+            },
+            {
+              tuvan: "турар",
+              ru: "быть, находиться",
+              en: "to be",
+              audioSrc: "",
+            },
+            {
+              tuvan: "садыг",
               ru: "магазин",
               en: "store, shop",
               audioSrc: "",
             },
+            {
+              tuvan: "хоорай",
+              ru: "город",
+              en: "city, town",
+              audioSrc: "",
+            },
+            {
+              tuvan: "ажыг",
+              ru: "более",
+              en: "more than",
+              audioSrc: "",
+            },
             { tuvan: "ажылдаар", ru: "работать", en: "to work", audioSrc: "" },
+          ],
+        },
+        {
+          id: "l2-ex",
+          type: "exercise",
+          titleRu: "Упражнения",
+          titleEn: "Exercises",
+          exercises: [
+            {
+              titleRu: "Упражнение 1",
+              titleEn: "Exercise 1",
+              instrRu: `Прочтите. Переведите при помощи словаря: <br><em>Мен Кызылда чурттап турар мен. Бистиң хоорайывыс чүс ажыг муң ажыг чурттакчылыг. Мен бодум садыгда ажылдап турар мен.</em>`,
+              instrEn: `Translate using new vocabulary: <br><em>Мен Кызылда чурттап турар мен. Бистиң хоорайывыс чүс ажыг муң ажыг чурттакчылыг. Мен бодум садыгда ажылдап турар мен.</em>`,
+            },
+            {
+              titleRu: "Упражнение 2",
+              titleEn: "Exercise 2",
+              instrRu: `Прочитайте и переведите: <br><em>Бөгүн 17-ниң хүнү. Даарта мен ажылдаар мен. Силер кажан келдиңер? Адыңар кымыл? Мээң адым… Бо чүл? Бо садыг-дыр</em>`,
+              instrEn: `Read and translate: <br><em>Бөгүн 17-ниң хүнү. Даарта мен ажылдаар мен. Силер кажан келдиңер? Адыңар кымыл? Мээң адым… Бо чүл? Бо садыг-дыр</em>`,
+            },
+          ],
+        },
+        {
+          id: "l2-answers",
+          type: "answers",
+          titleRu: "Ответы к упражнениям",
+          titleEn: "Answer Key",
+          exercises: [
+            {
+              titleRu: "Ответы к упражнению 1",
+              titleEn: "Answers to Exercise 1",
+              instrRu: "",
+              instrEn: "",
+              examples: [
+                {
+                  tuvan:
+                    "Мен Кызылда чурттап турар мен. Бистиң хоорайывыс чүс ажыг муң ажыг чурттакчылыг. Мен бодум садыгда ажылдап турар мен.",
+                  ru: "Я живу в Кызыле. В нашем городе более 100 тысяч жителей. Я работаю в магазине.",
+                  en: "I live in Kyzyl. Our city has a population of over 100,000. I work in a store.",
+                },
+              ],
+            },
+            {
+              titleRu: "Ответы к упражнению 2",
+              titleEn: "Answers to Exercise 2",
+              instrRu: "",
+              instrEn: "",
+              examples: [
+                {
+                  tuvan:
+                    "Бөгүн 17-ниң хүнү. Даарта мен ажылдаар мен. Силер кажан келдиңер? Адыңар кымыл? Мээң адым... . Бо чүл? Бо садыг-дыр.",
+                  ru: "Сегодня 17-е число. Завтра я работаю. Когда вы приехали? Как Вас зовут? Меня зовут ... . Что это? Это магазин.",
+                  en: "Today is the 17th. Tomorrow I work. When did you arrive? What is your name? My name is ... . What is this? This is a store.",
+                },
+              ],
+            },
           ],
         },
       ],
@@ -547,20 +716,40 @@ export class LessonsService {
         {
           id: "l3-sounds",
           type: "grammar",
-          titleRu: "Звуки Б, Д и П, Т",
-          titleEn: "Sounds B, D and P, T",
+          titleRu: "Звуки Б, Д и П, Т. Счёт 100—1 000 000.",
+          titleEn: "Sounds B, D and P, T. Counting 100—1,000,000.",
           rules: [
             {
-              titleRu: "Б, Д в начале слова",
+              titleRu: "Б, Д и П, Т в начале слова",
               titleEn: "B, D at the start of a word",
-              ru: "Звуки Б, Д в начале слова произносятся как глухие, но неприрывные. Примеры: бажың (дом), даг (гора).",
-              en: "Sounds Б, Д at the start of a word are voiceless but unaspirated: бажың (house), даг (mountain).",
+              ru: `<ol><li>Звуки <b>Б</b>, <b>Д</b> в начале слова произносятся как глухие, но неприрывные. Примеры: <i>бажың (дом), даг (гора)</i>.</li>
+              <li>Звуки <b>П</b>, <b>Т</b> в начале некоторых слов произносятся как взрывные сильные придыхательные согласные: <i>паш – котел, тараа – ячмень, пар – тигр, тос – девять</i>.
+              </li>
+              </ol>`,
+              en: `<ol><li>The sounds <b>Б</b> and <b>Д</b> at the beginning of a word are pronounced as voiceless, but continuous sounds. Examples: <em>бажың (house), даг (mountain).</li>
+              <li>The sounds <b>П</b> and <b>Т</b> at the beginning of some words are pronounced as plosive, strong, aspirated consonants: <em>паш – cauldron, тараа – barley, пар – tiger, тос – nine.</em>
+              </li>
+              </ol>`,
             },
             {
-              titleRu: "П, Т в начале слова",
-              titleEn: "P, T at the start of a word",
-              ru: "Звуки П, Т в начале некоторых слов — придыхательные смычные. Примеры: паш (котёл), тараа (ячмень), тигр, тос (девять).",
-              en: "Sounds П, Т at the start of some words are aspirated plosives: паш (cauldron), тараа (barley), тигр, тос (nine).",
+              titleRu: "Счёт 100—1 000 000",
+              titleEn: "Counting 100—1,000,000",
+              ru: `<ul><li><b>Сотни:</b> 100 – чүс, 200 – ийи чүс, 300 – үш чүс и т.д.; к названию соответствующей единицы (от одного до девяти), обозначающей порядок сотни, добавляйте слово чүс – сто, например, 900 – тос (девять) чүс (сто) – тос чүс.</li>
+              <li><b>Тысячи:</b> 1 000 – муң, бир муң; 2 000 – ийи муң; 3 000 – үш муң и т.д.; к названию соответствующей единицы (от одного до девяти), обозначающей порядок тысячи, добавляйте слово <b>муң</b> – тысяча, например: 7 000 – чеди (семь) муң (тысяча) – чеди муң.
+              </li>
+              <li><b>Десятки тысяч:</b> 10 000 – он муң, 20 000 – чээрби муң, 30 000 үжен муң и т.д.; к названию соответствующей десятки (от десяти до девяноста), обозначающей порядок десятка тысяч, добавляйте слово <b>муң</b> – тысяча, например, 60 000 – алдан (шестьдесят) муң (тысяча) – алдан муң.
+              </li>
+              <li><b>Сотни тысяч:</b> 100 000 – чүс муң, 200 000 – ийи чүс муң, 300 000 – үш чүс муң и т.д.; к названию соответствующей сотни добавляйте слово <b>муң</b> – тысяча, например, 500 000 – беш чүс (пятьсот) муң (тысяча) – беш чүс муң.
+              </li>
+              </ul>`,
+              en: `<ul><li><b>Hundreds:</b> 100 – chүs, 200 – iii chүs, 300 – үш chүs, etc.; to the name of the corresponding unit (from one to nine), indicating the order of a hundred, add the word chүs – hundred, for example, 900 – tos (nine) chүs (hundred) – tos chүs.</li> 
+              <li><b>Thousands:</b> 1,000 – mun, bir mun; 2,000 – iyi mun; 3,000 – ush mun, etc.; To the name of the corresponding unit (from one to nine), denoting the order of a thousand, add the word <b>муң</b> – thousand, for example: 7,000 – чеди (seven) муң (thousand) – чеди муң.
+              </li>
+              <li><b>Tens of thousands:</b> 10,000 – он муң, 20,000 – чээрби муң, 30,000 үжен муң, etc.; to the name of the corresponding decimal place (from ten to ninety), denoting the order of ten thousands, add the word <b>муң</b> – thousand, for example, 60,000 – алдан (sixty) муң (thousand) – алдан муң.
+              </li> 
+              <li><b>Hundreds of thousands:</b> 100,000 – chus mun, 200,000 – iyi chus mun, 300,000 – ush chus mun, etc.; to the name of the corresponding hundred, add the word <b>mun</b> - thousand, for example, 500,000 - besh chүs (five hundred) mun (thousand) - besh chүs mun. 
+              </li> 
+              </ul>`,
             },
           ],
         },
@@ -569,75 +758,49 @@ export class LessonsService {
           type: "phrases",
           titleRu: "Поздравления",
           titleEn: "Congratulations",
-          titleTuvan: "Байырлажыышкын",
+          titleTuvan: "Байыр чедирери",
           phrases: [
             {
-              tuvan: "Силерни байыр чедирдим!",
+              tuvan: "Силерге байыр чедирип тур мен!",
               ru: "Поздравляю вас!",
-              en: "I congratulate you!",
+              en: "Congratulations!",
               audioSrc: "",
             },
             {
-              tuvan: "Байырлал-биле байыр чедирдим!",
-              ru: "Поздравляю с праздником!",
-              en: "Congratulations on the holiday!",
+              tuvan: "Байырлал (Чаа чыл, төрүттүнген хүнүңер) таварыштыр Силерге байыр чедирип тур мен!",
+              ru: "Поздравляю вас с праздником (Новым годом, днем рождения)!",
+              en: "Happy holiday (New Year, birthday)!",
               audioSrc: "",
             },
             {
-              tuvan: "Чаа чыл-биле байыр чедирдим!",
-              ru: "С Новым годом!",
-              en: "Happy New Year!",
+              tuvan: "Тиилелгеңер-биле Силерге байыр чедирерин чөпшээреп көрүңер!",
+              ru: "Разрешите поздравить вас с победой!",
+              en: "Let me congratulate you on your victory!",
               audioSrc: "",
             },
             {
-              tuvan: "Шагаа-биле байыр чедирдим!",
-              ru: "С Тувинским Новым годом — Шагаа!",
-              en: "Happy Tuvan New Year Shagaa!",
-              audioSrc: "",
-            },
-            {
-              tuvan: "Силерге эки чүүлдер күзедим!",
-              ru: "Желаю вам всего хорошего!",
+              tuvan: "Экини күзедим!",
+              ru: "Всего вам доброго!",
               en: "All the best to you!",
               audioSrc: "",
             },
             {
               tuvan: "Кадык-чаагай болуңар!",
-              ru: "Будьте здоровы!",
-              en: "Stay healthy!",
+              ru: "Будьте здоровы! ",
+              en: "Be healthy!",
               audioSrc: "",
             },
             {
-              tuvan: "Аас-кежик күзедим!",
-              ru: "Желаю счастья!",
-              en: "I wish you happiness!",
+              tuvan: "Аас-кежикти (чедиишкинни, кадыкшылды) силерге күзедим!",
+              ru: "Желаю вам счастья (успеха, здоровья)!",
+              en: "I wish you happiness (success, health)!",
               audioSrc: "",
             },
             {
-              tuvan: "Май байырлалы-биле!",
-              ru: "С праздником 1 мая!",
-              en: "Happy May Day!",
+              tuvan: "Май бирниң байыры-биле!",
+              ru: "С праздником Первомая!",
+              en: "Happy 1st May Day!",
               audioSrc: "",
-            },
-          ],
-        },
-        {
-          id: "l3-nums",
-          type: "grammar",
-          titleRu: "Счёт 100—1 000 000",
-          titleEn: "Counting 100 to 1,000,000",
-          rules: [
-            {
-              titleRu: "Сотни",
-              titleEn: "Hundreds",
-              ru: "100 — чүс, 200 — ийи чүс, 300 — үш чүс, 400 — дөрт чүс, 500 — беш чүс, 600 — алды чүс, 700 — чеди чүс, 800 — сес чүс, 900 — тос чүс.",
-              en: "100 — чүс, 200 — ийи чүс, 300 — үш чүс, 400 — дөрт чүс, 500 — беш чүс, 600 — алды чүс, 700 — чеди чүс, 800 — сес чүс, 900 — тос чүс.",
-            },
-            {
-              titleRu: "Тысячи и миллион",
-              titleEn: "Thousands and million",
-              ru: "1 000 — муң, 2 000 — ийи муң, 10 000 — он муң, 100 000 — чүс муң. Миллион — миллион.",
-              en: "1,000 — муң, 2,000 — ийи муң, 10,000 — он муң, 100,000 — чүс муң. Million — миллион.",
             },
           ],
         },
@@ -653,10 +816,71 @@ export class LessonsService {
               en: "to congratulate",
               audioSrc: "",
             },
+
+            {
+              tuvan: "төрүттүнген хүнү",
+              ru: "день рождения",
+              en: "birthday",
+              audioSrc: "",
+            },
+            {
+              tuvan: "куда дүжүрген хүнү",
+              ru: "день свадьбы",
+              en: "wedding day",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Тиилелге хүнү",
+              ru: "День Победы",
+              en: "Victory day",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Ада-чурттуң камгалакчыларының хүнү",
+              ru: "День защитников Отечества",
+              en: "Defenders of the Fatherland Day",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Март 8-тиң хүнү",
+              ru: "День 8 Марта",
+              en: "8th of March day",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Республика хүнү",
+              ru: "День республики",
+              en: "Republic Day",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Россияның конституциязының хүнү",
+              ru: "День Российской конституции",
+              en: "Russian Constitution Day",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Тываның конституциязының хүнү",
+              ru: "День Тувинской конституции",
+              en: "Tuvan Constitution Day",
+              audioSrc: "",
+            },
             {
               tuvan: "Шагаа",
-              ru: "Тувинский Новый год",
-              en: "Tuvan New Year",
+              ru: "Шагаа - Тувинский Новый год",
+              en: "Shagaa - Tuvan New Year",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Чаа чыл",
+              ru: "Новый год",
+              en: "New Year",
+              audioSrc: "",
+            },
+            {
+              tuvan: "чыскаал",
+              ru: "парад",
+              en: "parade",
               audioSrc: "",
             },
             {
@@ -665,10 +889,126 @@ export class LessonsService {
               en: "happiness",
               audioSrc: "",
             },
-            { tuvan: "кадык", ru: "здоровье", en: "health", audioSrc: "" },
-            { tuvan: "чедиишкин", ru: "успех", en: "success", audioSrc: "" },
-            { tuvan: "амыдырал", ru: "жизнь", en: "life", audioSrc: "" },
-            { tuvan: "байырлал", ru: "праздник", en: "holiday", audioSrc: "" },
+            {
+              tuvan: "кадыкшыл",
+              ru: "здоровье",
+              en: "health",
+              audioSrc: "",
+            },
+            {
+              tuvan: "чедиишкин",
+              ru: "успех",
+              en: "success",
+              audioSrc: "",
+            },
+            {
+              tuvan: "күзээр",
+              ru: "пожелать",
+              en: "to wish",
+              audioSrc: "",
+            },
+            {
+              tuvan: "сан",
+              ru: "счет, цифра",
+              en: "number",
+              audioSrc: "",
+            },
+            {
+              tuvan: "түң",
+              ru: "сумма",
+              en: "sum",
+              audioSrc: "",
+            },
+            {
+              tuvan: "амыдырал; чуртталга, амыдырал-чуртталга",
+              ru: "жизнь",
+              en: "life",
+              audioSrc: "",
+            },
+            {
+              tuvan: "улуг",
+              ru: "большой",
+              en: "big",
+              audioSrc: "",
+            },
+            {
+              tuvan: "биче, бичии",
+              ru: "маленький",
+              en: "small",
+              audioSrc: "",
+            },
+            {
+              tuvan: "шак",
+              ru: "время, часы",
+              en: "time, hour, a watch",
+              audioSrc: "",
+            },
+          ],
+        },
+        {
+          id: "l3-ex",
+          type: "exercise",
+          titleRu: "Упражнения",
+          titleEn: "Exercises",
+          exercises: [
+            {
+              titleRu: "Упражнение 1",
+              titleEn: "Exercise 1",
+              instrRu: `<ol>Напишите по данным образцам и прочитайте вслух числительные, обозначенные цифрами:
+              <li><em>17 – он (десять) чеди (семь) – он чеди; 33 – үжен (тридцать) үш (три) – үжен үш;</em> <b>45; 85; 14; 99; 62; 11; 84;</b></li>
+              <li><em>214 – ийи (два) чүс (сто он (десять) дөрт (четыре) – ийи чүс он дөрт;</em> <b>999; 136; 540; 312; 725; 333;</b></li>
+              <li><em>1988 – бир (один) муң (тысяча) тос (девять) чүс (сто) сезен (восемьдесят) сес (восемь) – бир муң тос чүс сезен сес;</em> <b>3462; 7858; 6005; 4596; 2949; 8333; 4540;</b></li>
+              <li><em>92665 – тозан (девяносто) ийи (два) муң (тысяча) алды (шесть) чүс (сто) алдан (шестьдесят) беш (пять) – тозан ийи муң алды чүс алдан беш;</em> <b>70 745; 1 433; 62 662; 49 004; 97 510;</b></li>
+              <li><em>454 619 – дөрт (четыре) чүс (сто) бежен (пятьдесят) дөрт (четыре) муң (тысяча) алды (шесть) чүс (сто) он (десять) тос (девять) – дөрт чүс бежен дөрт муң алды чүс он тос;</em> <b>994 333; 345 047; 640 000; 800 001; 670 745.</b></li>
+              </ol>`,
+              instrEn: `<ol>Write the numerals indicated by numbers using the given examples and read them aloud:
+              <li><em>17 – он (ten) чеди (seven) – он чеди; 33 – үжен (thirty) үш (three) – үжен үш;</em> <b>45; 85; 14; 99; 62; 11; 84;</b></li> 
+              <li><em>214 – ийи (two) чүс (one hundred он (ten) дөрт (four) – ийи чүс он дөрт;</em> <b>999; 136; 540; 312; 725; 333;</b></li> 
+              <li><em>1988 – бир (one) муң (thousand) тос (nine) чүс (one hundred) сезен (eighty) сес (eight) – бир муң тос чүс сезен сес;</em> <b>3462; 7858; 6005; 4596; 2949; 8333; 4540;</b></li> 
+              <li><em>92665 – tozan (ninety) iyi (two) mun (one thousand) aldy (six) chүs (one hundred) aldan (sixty) besh (five) – tozan iyi mun aldy chүs aldan besh;</em> <b>70 745; 1 433; 62,662; 49 004; 97,510;</b></li> 
+              <li><em>454 619 – дөрт (four) чүс (hundred) бежен (fifty) дөрт (four) муң (thousand) алды (six) чүс (hundred) он (ten) тос (nine) – дөрт чүс бежен дөрт муң алды чүс он тос;</em> <b>994 333; 345 047; 640,000; 800 001; 670 745.</b></li> 
+              </ol>`,
+            },
+            {
+              titleRu: "Упражнение 2",
+              titleEn: "Exercise 2",
+              instrRu: `Ответьте на вопросы: <br><em>Каш шак-тыр? Кым келди? Кажан келир силер?</em>`,
+              instrEn: `Answer the questions: <br><em>Каш шак-тыр? Кым келди? Кажан келир силер?</em>`,
+            },
+          ],
+        },
+        {
+          id: "l3-answers",
+          type: "answers",
+          titleRu: "Ответы к упражнениям",
+          titleEn: "Answer Key",
+          exercises: [
+            {
+              titleRu: "Ответы к упражнению 1",
+              titleEn: "Answers to Exercise 1",
+              instrRu: "",
+              instrEn: "",
+              examples: [
+                {
+                  tuvan:
+                `45; 85; 14; 99; 62; 11; 84;<br>
+                999; 136; 540; 312; 725; 333;<br> 
+                3462; 7858; 6005; 4596; 2949; 8333; 4540;<br>
+                70 745; 1 433; 62 662; 49 004; 97 510;<br>
+                994 333; 345 047; 640 000; 800 001; 670 745<br>`,
+                  ru: `<b>45</b> — дөртен беш; <b>85</b> — сезен беш; <b>14</b> — он дөрт; <b>99</b> — тозан тос; <b>62</b> — алдан ийи; <b>11</b> — он бир; <b>84</b> — сезен дөрт;<br>
+                <b>999</b> — тос чүс тозан тос; <b>136</b> — бир чүс үжен алды; <b>540</b> — беш чүс дөртен; <b>312</b> — үш чүс он ийи; <b>725</b> — чеди чүс чээрби беш; <b>333</b> — үш чүс үжен үш; <b>3462</b> — үш муң дөрт чүс алдан ийи;<br>
+                <b>7858</b> — чеди муң сес чүс бежен сес; <b>6005</b> — алды муң беш; <b>4596</b> — дөрт муң беш чүс тозан алды; <b>2949</b> — ийи муң тос чүс дөртен тос; <b>8333</b> — сес муң үш чүс үжен үш; <b>4540</b> — дөрт муң беш чүс дөртен; <br>
+                <b>70 745</b> — чеди он муң чеди чүс дөртен беш; <b>1 433</b> — бир муң дөрт чүс үжен үш; <b>62 662</b> — алдан ийи муң алты чүс алдан ийи; <b>49 004</b> — дөртен тос муң дөрт; <b>97 510</b> — тозан чеди муң беш чүс он; <br>
+                <b>994 333</b> — тос чүс тозан дөрт муң үш чүс үжен үш; <b>345 047</b> — үш чүс дөртен беш муң дөртен чеди; <b>640 000</b> — алды чүс дөртен муң; <b>800 001 </b> — сес чүс муң бир; <b>670 745</b> — алды чүс чеди он муң чеди чүс дөртен беш`,
+                  en: `<b>45</b> — дөртен беш; <b>85</b> — сезен беш; <b>14</b> — он дөрт; <b>99</b> — тозан тос; <b>62</b> — алдан ийи; <b>11</b> — он бир; <b>84</b> — сезен дөрт;<br>
+                <b>999</b> — тос чүс тозан тос; <b>136</b> — бир чүс үжен алды; <b>540</b> — беш чүс дөртен; <b>312</b> — үш чүс он ийи; <b>725</b> — чеди чүс чээрби беш; <b>333</b> — үш чүс үжен үш; <b>3462</b> — үш муң дөрт чүс алдан ийи;<br>
+                <b>7858</b> — чеди муң сес чүс бежен сес; <b>6005</b> — алды муң беш; <b>4596</b> — дөрт муң беш чүс тозан алды; <b>2949</b> — ийи муң тос чүс дөртен тос; <b>8333</b> — сес муң үш чүс үжен үш; <b>4540</b> — дөрт муң беш чүс дөртен; <br>
+                <b>70 745</b> — чеди он муң чеди чүс дөртен беш; <b>1 433</b> — бир муң дөрт чүс үжен үш; <b>62 662</b> — алдан ийи муң алты чүс алдан ийи; <b>49 004</b> — дөртен тос муң дөрт; <b>97 510</b> — тозан чеди муң беш чүс он; <br>
+                <b>994 333</b> — тос чүс тозан дөрт муң үш чүс үжен үш; <b>345 047</b> — үш чүс дөртен беш муң дөртен чеди; <b>640 000</b> — алды чүс дөртен муң; <b>800 001 </b> — сес чүс муң бир; <b>670 745</b> — алды чүс чеди он муң чеди чүс дөртен беш`,
+                },
+              ],
+            },
           ],
         },
       ],

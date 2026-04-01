@@ -21,7 +21,7 @@
       @for (rule of section.rules; track rule.titleRu) {
         <div class="grammar-rule">
           <h4>{{ langSvc.lang() === "en" ? rule.titleEn : rule.titleRu }}</h4>
-          <p>{{ langSvc.lang() === "en" ? rule.en : rule.ru }}</p>
+          <div [innerHTML]="langSvc.lang() === 'en' ? rule.en : rule.ru"></div>
         </div>
       }
     }
@@ -33,7 +33,7 @@
       <app-audio-btn
         [btnId]="'section-' + section.id"
         [src]="''"
-        label="▶ Слушать весь раздел"
+        label="Слушать весь раздел"
       />
       <div class="phrase-list" style="margin-top: 0.75rem">
         @for (phrase of section.phrases; track phrase.tuvan) {
@@ -54,8 +54,8 @@
       @for (ex of section.exercises; track ex.titleRu) {
         <div class="exercise-block">
           <h4>{{ langSvc.lang() === "en" ? ex.titleEn : ex.titleRu }}</h4>
-          <div class="exercise-instruction">
-            {{ langSvc.lang() === "en" ? ex.instrEn : ex.instrRu }}
+          <div class="exercise-instruction"
+            [innerHTML]="langSvc.lang() === 'en' ? ex.instrEn : ex.instrRu">
           </div>
           <div class="exercise-examples">
             @for (row of ex.examples; track row.tuvan) {
@@ -65,7 +65,6 @@
                   <app-audio-btn
                     [btnId]="'ex-' + row.tuvan"
                     [src]="''"
-                    label="▶"
                   />
                 </div>
                 <div class="ex-trans">
@@ -89,9 +88,8 @@
           <div class="exercise-examples">
             @for (row of ex.examples; track row.tuvan) {
               <div class="ex-row">
-                <div class="ex-tuvan">{{ row.tuvan }}</div>
-                <div class="ex-trans">
-                  {{ langSvc.lang() === "en" ? row.en : row.ru }}
+                <div class="ex-tuvan" [innerHTML]="row.tuvan"></div>
+                <div class="ex-trans"[innerHTML]="langSvc.lang() === 'en' ? row.en : row.ru">
                 </div>
               </div>
             }

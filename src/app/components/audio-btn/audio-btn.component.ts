@@ -9,6 +9,6 @@ import { AudioService } from '../../core/services/audio.service';
 export class AudioBtnComponent {
   @Input() btnId  = '';
   @Input() src    = '';
-  @Input() label  = '▶ Слушать';
+  @Input() label  = 'Слушать';
   constructor(public audioSvc: AudioService) {}
 }
