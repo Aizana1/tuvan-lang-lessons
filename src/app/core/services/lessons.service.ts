@@ -767,13 +767,15 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
               audioSrc: "",
             },
             {
-              tuvan: "Байырлал (Чаа чыл, төрүттүнген хүнүңер) таварыштыр Силерге байыр чедирип тур мен!",
+              tuvan:
+                "Байырлал (Чаа чыл, төрүттүнген хүнүңер) таварыштыр Силерге байыр чедирип тур мен!",
               ru: "Поздравляю вас с праздником (Новым годом, днем рождения)!",
               en: "Happy holiday (New Year, birthday)!",
               audioSrc: "",
             },
             {
-              tuvan: "Тиилелгеңер-биле Силерге байыр чедирерин чөпшээреп көрүңер!",
+              tuvan:
+                "Тиилелгеңер-биле Силерге байыр чедирерин чөпшээреп көрүңер!",
               ru: "Разрешите поздравить вас с победой!",
               en: "Let me congratulate you on your victory!",
               audioSrc: "",
@@ -990,8 +992,7 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
               instrEn: "",
               examples: [
                 {
-                  tuvan:
-                `45; 85; 14; 99; 62; 11; 84;<br>
+                  tuvan: `45; 85; 14; 99; 62; 11; 84;<br>
                 999; 136; 540; 312; 725; 333;<br> 
                 3462; 7858; 6005; 4596; 2949; 8333; 4540;<br>
                 70 745; 1 433; 62 662; 49 004; 97 510;<br>
@@ -1027,13 +1028,23 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
           type: "grammar",
           titleRu: "Вопросительные предложения",
           titleEn: "Question Sentences",
-          titleTuvan: "Айтырыг домактар",
+          titleTuvan: "Айтырыг домактары",
           rules: [
             {
               titleRu: "Частица бе?",
               titleEn: "Particle бе?",
-              ru: "С частицей бе? Ты возьмёшь? — Алыр сен бе? Вы возьмёте? — Алыр силер бе?",
-              en: "With the particle бе? You will take? — Алыр сен бе? Will you take? — Алыр силер бе?",
+              ru: `<ol>Вопросительные предложения тувинского языка строятся:<li>при помощи вопросительной частицы <b>бе?</b> Например, утвердительное предложение: <i>Алыр силер – Вы получите (возьмете)<i/>; вопросительное: <i>Алыр силер бе? – Вы будете получать (возьмете ли)?</i>.</li>
+              <li>при помощи вопросительных слов <b>кажан?– когда?; каяа? – где </b>(быть, находиться); <b>кандыг? – какой?; кайда? – где </b>(находится)<b>? канчап – как </b>(каким образом)<b>? чүге? – почему?</b>; и т.д.;
+              </li>
+              <li>в 3-м лице при помощи вопросительного слова и окончания <b>-л, (-ыл, -ил, -ул, -үл)</b>: <i>Адыңар кымыл (кым+ыл)? – Как Ваше имя? Чүү херегил (херек+ил)? – Что нужно?</i>
+              </li>
+              </ol>`,
+              en: `<ol>Tuvan interrogative sentences are constructed:<li>using the interrogative particle <b>бе?</b> For example, an affirmative sentence: <i>Алыр силер – You will receive (take)<i/>; interrogative: <i>Алыр силер бе? – Will you receive (take)?</i>.</li>
+              <li>using the interrogative words <b>кажан? – when?; каяа? – where</b>(to be, to be); <b>кандыг? – what?; кайда? – where</b>(is)<b>? канчап – how</b>(in what way)<b>? чүге? – why?</b>; etc.;
+              </li> 
+              <li>in the 3rd person using a question word and the ending <b>-l, (-yl, -il, -ul, -үл)</b>: <i>Адыңар кымыл (кым+ыл)? – What is your name? Чүү херегил (херек+ил)? – What do you need?</i> 
+              </li> 
+              </ol>`,
             },
             {
               titleRu: "Вопросительные слова",
@@ -1044,8 +1055,10 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
             {
               titleRu: "Частицы эвес и чок",
               titleEn: "Particles эвес and чок",
-              ru: "чок — отсутствие: Бажың чок (здесь нет дома). эвес — отрицание признака: Бажың эвес, а хаалга.",
-              en: "чок — absence: no door here. эвес — negation of a trait: This is not a door, but a window.",
+              ru: `Частицы <b>чок</b> и <b>эвес</b> употребляются после тех слов, к которым они относятся: 1. Мында эжик чок – Здесь нет двери; балык чок – рыбы нет; 2. Бо эжик эвес, а соңга-дыр – Это не дверь, а окно; Бо чаа эвес идик-тир – Это не
+              новая обувь; Мен эвес, а силер харыылаар силер – Не я, а вы будете отвечать; Мында кат эвээш эвес – Здесь ягод немало.`,
+              en: `The particles <b>чок</b> and <b>эвес</b> are used after the words to which they relate: 1. Мында эжик чок - There is no door here; балык чок - no fish; 2. Бо эжик эвес, а соңга-дыр - This is not a door, but a window; Бо чаа эвес идик-тир  – This is not  
+              new shoes; Мен эвес, а силер харыылаар силер - Not I, but you will answer; Мында кат эвээш эвес – There are a lot of berries here.`,
             },
           ],
         },
@@ -1056,56 +1069,68 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
           titleEn: "Question Sentence Examples",
           phrases: [
             {
-              tuvan: "Үе каш болган-дыр?",
+              tuvan: "Каш шак-тыр?",
               ru: "Сколько времени?",
               en: "What time is it?",
               audioSrc: "",
             },
             {
-              tuvan: "Кажан кээрим-дыр?",
+              tuvan: "Кажан келир мен? ",
               ru: "Когда мне прийти?",
               en: "When should I come?",
               audioSrc: "",
             },
             {
-              tuvan: "Кайыын чорупкан-дыр?",
-              ru: "Куда ты идёшь?",
-              en: "Where are you going?",
+              tuvan: "Кайнаар баар силер?",
+              ru: "Куда пойдете?",
+              en: "When will you go?",
               audioSrc: "",
             },
             {
-              tuvan: "Кайындан келген-дир?",
-              ru: "Откуда ты пришёл?",
+              tuvan: "Кайыын келдиңер?",
+              ru: "Откуда пришли?",
               en: "Where did you come from?",
               audioSrc: "",
             },
             {
-              tuvan: "Кайда таваржыылы?",
+              tuvan: "Каяа ужуражыр бис?",
               ru: "Где встретимся?",
               en: "Where shall we meet?",
               audioSrc: "",
             },
             {
-              tuvan: "Амдыы чүнү канчаалы?",
-              ru: "Что сейчас будем делать?",
-              en: "What shall we do now?",
+              tuvan: "Ам канчаар бис?",
+              ru: "Как нам теперь быть?",
+              en: "What should we do now?",
               audioSrc: "",
             },
             {
-              tuvan: "Ол амдыы кайдал?",
+              tuvan: "Ол ам кайдал?",
               ru: "Где он сейчас?",
               en: "Where is he now?",
               audioSrc: "",
             },
             {
-              tuvan: "Чүге ынчалдыр?",
+              tuvan: "Чүге ындыгыл?",
               ru: "Почему так?",
               en: "Why is it like this?",
               audioSrc: "",
             },
             {
-              tuvan: "Кайда ажылдаар сен?",
-              ru: "Где ты работаешь?",
+              tuvan: "Чүге келбедиңер?",
+              ru: "Почему не пришли?",
+              en: "Why didn't you come?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кандыг ном алыр силер?",
+              ru: "Какую книгу возьмете?",
+              en: "Which book will you take?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кайда ажылдап турар силер?",
+              ru: "Где вы работаете?",
               en: "Where do you work?",
               audioSrc: "",
             },
@@ -1117,28 +1142,301 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
           titleRu: "Слова",
           titleEn: "Vocabulary",
           words: [
-            { tuvan: "бедик", ru: "высокий", en: "high, tall", audioSrc: "" },
-            { tuvan: "алчак", ru: "низкий", en: "low", audioSrc: "" },
+            {
+              tuvan: "бедик",
+              ru: "высокий, высоко",
+              en: "high, tall",
+              audioSrc: "",
+            },
+            {
+              tuvan: "чавыс",
+              ru: "низкий, низко",
+              en: "short, low",
+              audioSrc: "",
+            },
             { tuvan: "чалгаа", ru: "ленивый", en: "lazy", audioSrc: "" },
             {
-              tuvan: "кызымак",
-              ru: "трудолюбивый",
+              tuvan: "кызымак, кежээ",
+              ru: "работящий, трудолюбивый",
               en: "hardworking",
               audioSrc: "",
             },
-            {
-              tuvan: "имир",
-              ru: "широкий",
-              en: "wide, spacious",
-              audioSrc: "",
-            },
-            { tuvan: "чинчек", ru: "узкий", en: "narrow", audioSrc: "" },
-            { tuvan: "аът", ru: "лошадь", en: "horse", audioSrc: "" },
-            { tuvan: "инек", ru: "корова", en: "cow", audioSrc: "" },
             { tuvan: "хоорай", ru: "город", en: "city", audioSrc: "" },
             { tuvan: "суур", ru: "деревня", en: "village", audioSrc: "" },
-            { tuvan: "эжик", ru: "дверь", en: "door", audioSrc: "" },
-            { tuvan: "нүк", ru: "окно", en: "window", audioSrc: "" },
+            {
+              tuvan: "улуг",
+              ru: "большой",
+              en: "big",
+              audioSrc: "",
+            },
+            {
+              tuvan: "биче, бичии",
+              ru: "маленький",
+              en: "small",
+              audioSrc: "",
+            },
+            {
+              tuvan: "делгем",
+              ru: "широкий, широко",
+              en: "wide",
+              audioSrc: "",
+            },
+            { tuvan: "кызыы", ru: "узкий", en: "narrow", audioSrc: "" },
+            {
+              tuvan: "соок",
+              ru: "холодный, холодно",
+              en: "cold",
+              audioSrc: "",
+            },
+            { tuvan: "чылыг", ru: "теплый, тепло", en: "warm", audioSrc: "" },
+            { tuvan: "аът", ru: "лошадь", en: "horse", audioSrc: "" },
+            { tuvan: "инек", ru: "корова", en: "cow", audioSrc: "" },
+            {
+              tuvan: "чазак (чазак чери)",
+              ru: "правительство",
+              en: "government",
+              audioSrc: "",
+            },
+            {
+              tuvan: "чазак кежигүнү",
+              ru: "член правительства",
+              en: "member of the government",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Чазак бажыңы",
+              ru: "Дом правительства",
+              en: "Government House",
+              audioSrc: "",
+            },
+            { tuvan: "сайыт", ru: "министр", en: "secretary", audioSrc: "" },
+            { tuvan: "депутат", ru: "депутат", en: "deputy", audioSrc: "" },
+            {
+              tuvan: "эргелел (эргелел чери)",
+              ru: "управление",
+              en: "governance",
+              audioSrc: "",
+            },
+            {
+              tuvan: "эргелел даргазы",
+              ru: "начальник управления",
+              en: "head of governance",
+              audioSrc: "",
+            },
+            { tuvan: "килдис", ru: "отдел", en: "department", audioSrc: "" },
+            {
+              tuvan: "килдис даргазы, килдизиниң даргазы",
+              ru: "начальник отдела",
+              en: "head of department",
+              audioSrc: "",
+            },
+            {
+              tuvan: "албан (албан чери)",
+              ru: "служба",
+              en: "service",
+              audioSrc: "",
+            },
+            {
+              tuvan: "албан(ының) даргазы",
+              ru: "руководитель службы",
+              en: "head of service",
+              audioSrc: "",
+            },
+            { tuvan: "чөвүлел", ru: "совет", en: "council", audioSrc: "" },
+            {
+              tuvan: "Россия Федерациязы",
+              ru: "Российская Федерация",
+              en: "Russian Federation",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Россия Федерациязының Президентизи",
+              ru: "Президент Российской Федерации ",
+              en: "President of the Russian Federation",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Россия Федерациязының Чазаа",
+              ru: "Правительство Российской Федерации",
+              en: "Government of the Russian Federation",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Россия Федерациязының Чазааның Даргазы",
+              ru: "Председатель Правительства Российской Федерации",
+              en: "Chairman of the Government of the Russian Federation",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Россия Федерациязының Федералдыг Хуралының Күрүне Думазы",
+              ru: "Государственная Дума Федерального Собрания Российской Федерации",
+              en: "State Duma of the Federal Assembly of the Russian Federation",
+              audioSrc: "",
+            },
+            {
+              tuvan:
+                "Россия Федерациязының Федералдыг Хуралының Федерация Чөвүлели",
+              ru: "Совет Федерации Федерального Собрания Российской федерации",
+              en: "Federation Council of the Federal Assembly of the Russian Federation",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Тыва Республика",
+              ru: "Республика Тыва",
+              en: "Republic of Tuva",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Тыва Республиканың Чазаа",
+              ru: "Правительство Республики Тыва",
+              en: "Government of the Republic of Tyva",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Тыва Республиканың Чазааның Даргазы",
+              ru: "Председатель Правительства Республики Тыва",
+              en: "Chairman of the Government of the Republic of Tyva",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Тыва Республиканың Баштыңы",
+              ru: "Глава Республики Тыва",
+              en: "Head of the Republic of Tuva",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Тыва Республиканың Дээди Хуралы (парламентизи)",
+              ru: "Верховный Хурал (парламент) Республики Тыва",
+              en: "Supreme Khural (parliament) of the Republic of Tyva",
+              audioSrc: "",
+            },
+            { tuvan: "кожуун", ru: "район", en: "district", audioSrc: "" },
+            { tuvan: "суму", ru: "поселение", en: "settlement", audioSrc: "" },
+            { tuvan: "баштың(ы)", ru: "глава", en: "head", audioSrc: "" },
+            {
+              tuvan: "хоорай баштыңы",
+              ru: "глава города",
+              en: "head of the city",
+              audioSrc: "",
+            },
+            {
+              tuvan: "кожуун баштыңы",
+              ru: "глава кожууна",
+              en: "head of the district",
+              audioSrc: "",
+            },
+            {
+              tuvan: "суму баштыңы",
+              ru: "глава сумона",
+              en: "head of the settlement",
+              audioSrc: "",
+            },
+            {
+              tuvan: "чагырга чери",
+              ru: "администрация",
+              en: "administration",
+              audioSrc: "",
+            },
+            {
+              tuvan: "чагырга даргазы",
+              ru: "председатель администрации",
+              en: "Chairman of the Administration",
+              audioSrc: "",
+            },
+            {
+              tuvan: "хоорай чагыргазы",
+              ru: "мэрия",
+              en: "city ​hall",
+              audioSrc: "",
+            },
+            {
+              tuvan: "хоорай чагырыкчызы",
+              ru: "мэр",
+              en: "mayor",
+              audioSrc: "",
+            },
+            {
+              tuvan: "кожуун чагыргазының даргазы",
+              ru: "председатель администрации кожууна",
+              en: "Chairman of the District Administration",
+              audioSrc: "",
+            },
+            {
+              tuvan: "суму чагыргазының даргазы",
+              ru: "председатель администрации сумона",
+              en: "Chairman of the Settlement Administration",
+              audioSrc: "",
+            },
+          ],
+        },
+        {
+          id: "l4-ex",
+          type: "exercise",
+          titleRu: "Упражнения",
+          titleEn: "Exercises",
+          exercises: [
+            {
+              titleRu: "Упражнение 1",
+              titleEn: "Exercise 1",
+              instrRu: `<ol>Дайте утвердительный или отрицательный ответ на следующие вопросы по данному образцу:
+              <li>Ажылдап турар силер бе? – Вы работаете? <b>Ответы:</b> Ийе, ажылдап турар мен – Да, я работаю; Чок, ажылдавайн турар мен. – Нет, я не работаю.</li>
+              <li>Бо бөгүнгү солун бе? – Это сегодняшняя газета?</li>
+              <li>Кино көөр силер бе? – Вы будете смотреть кино?</li>
+              <li>Соок суг бар бе? – Есть ли холодная вода?</li>
+              </ol>`,
+              instrEn: `<ol>Give an affirmative or negative answer to the following questions based on this sample: 
+              <li>Ажылдап турар силер бе? -Are you working? <b>Answers:</b> Ийе, ажылдап турар мен - Yes, I work; Чок, ажылдавайн турар мен. – No, I don't work.</li> 
+              <li>Бо бөгүнгү солун бе? – Is this today's newspaper?</li> 
+              <li>Кино көөр силер бе? – Will you watch a movie?</li> 
+              <li>Соок суг бар бе? – Is there cold water?</li> 
+              </ol>`,
+            },
+            {
+              titleRu: "Упражнение 2",
+              titleEn: "Exercise 2",
+              instrRu: `Переведите вопросы на тувинский язык. <br><em>Где вы работаете? Когда встретимся? Когда пришли? Когда будет день вашего рождения? Почему вы пришли?</em>`,
+              instrEn: `Translate the questions into Tuvan language: <br><em>Where do you work? When will we meet? When did you arrive? When is your birthday? Why did you come?</em>`,
+            },
+            {
+              titleRu: "Упражнение 3",
+              titleEn: "Exercise 3",
+              instrRu: `При помощи словарика переведите выражения: <br><em>Хоорай эвес – суур-дур; улуг эвес, бичии- дир; делгем эвес, кызыы-дыр; бедик эвес, чавыс-тыр; чалгаа эвес, кежээ-дир, соок эвес, чылыг-дыр; аът эвес, инек-тир; чээрби эвес, чээрби бир-дир.</em>`,
+              instrEn: `Use a dictionary to translate the expressions: <br><em>Хоорай эвес – суур-дур; улуг эвес, бичии- дир; делгем эвес, кызыы-дыр; бедик эвес, чавыс-тыр; чалгаа эвес, кежээ-дир, соок эвес, чылыг-дыр; аът эвес, инек-тир; чээрби эвес, чээрби бир-дир.</em>`,
+            },
+          ],
+        },
+        {
+          id: "l4-answers",
+          type: "answers",
+          titleRu: "Ответы к упражнениям",
+          titleEn: "Answer Key",
+          exercises: [
+            {
+              titleRu: "Ответы к упражнению 2",
+              titleEn: "Answers to Exercise 2",
+              instrRu: "",
+              instrEn: "",
+              examples: [
+                {
+                  tuvan: `Кайда ажылдап турар силер? Кажан ужуражыр бис? Кажан келдиңер? Силерниң төрүттүнген хүнүңер кажан болур? Чүге келдиңер?`,
+                  ru: `Где вы работаете? Когда встретимся? Когда пришли? Когда будет день вашего рождения? Почему вы пришли?`,
+                  en: `Where do you work? When will we meet? When did you arrive? When is your birthday? Why did you come?`,
+                },
+              ],
+            },
+            {
+              titleRu: "Ответы к упражнению 3",
+              titleEn: "Answers to Exercise 3",
+              instrRu: "",
+              instrEn: "",
+              examples: [
+                {
+                  tuvan: `Хоорай эвес – суур-дур; улуг эвес, бичии- дир; делгем эвес, кызыы-дыр; бедик эвес, чавыс-тыр; чалгаа эвес, кежээ-дир, соок эвес, чылыг-дыр; аът эвес, инек-тир; чээрби эвес, чээрби бир-дир.`,
+                  ru: `Это не город – это село; не большое, маленькое; не широкое, узкое; не высокое, низкое; не ленивый, трудолюбивый; не холодное, тёплое; это не лошадь, это корова; это не двадцать, это двадцать один`,
+                  en: `It is not a city – it is a village; it's not big, it's small; it's not wide, it's narrow; it's not tall, it's short; not lazy, but hardworking; it's not cold, it's warm; it's not a horse, it's a cow; it's not twenty, it's twenty one`,
+                },
+              ],
+            },
           ],
         },
       ],
@@ -1157,69 +1455,26 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
           type: "grammar",
           titleRu: "Личные местоимения",
           titleEn: "Personal Pronouns",
-          titleTuvan: "Артынчылар",
+          titleTuvan: "Арынның ат оруннары",
           rules: [
             {
               titleRu: "Таблица местоимений",
               titleEn: "Pronouns table",
-              ru: "1-е л.: мен (я), бис (мы). 2-е л.: сен (ты), силер (вы). 3-е л.: ол (он/она), олар (они).",
-              en: "1st p.: мен (I), бис (we). 2nd p.: сен (you sing.), силер (you pl./formal). 3rd p.: ол (he/she), олар (they).",
-            },
-            {
-              titleRu: "Личный показатель в конце предложения",
-              titleEn: "Person marker at end of sentence",
-              ru: "Мен ажылдаар мен. Сен кээр сен. Бис ажылдаар бис. Подлежащее может опускаться.",
-              en: "Мен ажылдаар мен — I will work. Сен кээр сен — You will come. Бис ажылдаар бис — We will work. The subject can be omitted.",
-            },
-          ],
-        },
-        {
-          id: "l5-phrases",
-          type: "phrases",
-          titleRu: "Примеры предложений",
-          titleEn: "Example Sentences",
-          phrases: [
-            {
-              tuvan: "Мен ажылдаар мен.",
-              ru: "Я буду работать.",
-              en: "I will work.",
-              audioSrc: "",
-            },
-            {
-              tuvan: "Сен башкысың.",
-              ru: "Ты учитель.",
-              en: "You are a teacher.",
-              audioSrc: "",
-            },
-            {
-              tuvan: "Сен аныяксың.",
-              ru: "Ты молодой.",
-              en: "You are young.",
-              audioSrc: "",
-            },
-            {
-              tuvan: "Мен эмчимен.",
-              ru: "Я врач.",
-              en: "I am a doctor.",
-              audioSrc: "",
-            },
-            {
-              tuvan: "Ол кирип келди.",
-              ru: "Он вошёл.",
-              en: "He came in.",
-              audioSrc: "",
-            },
-            {
-              tuvan: "Олар кээр-лер.",
-              ru: "Они придут.",
-              en: "They will come.",
-              audioSrc: "",
-            },
-            {
-              tuvan: "Бис беш кижи бис.",
-              ru: "Нас пятеро.",
-              en: "There are five of us.",
-              audioSrc: "",
+              ru: `1-е л.: мен (я), бис (мы). 2-е л.: сен (ты), силер (вы). 3-е л.: ол (он/она), олар (они).\n
+              <b>Примечание 1.</b> Личные местоимения в именительном падеже обычно используются в роли подлежащего в предложении. 
+              Например: Сен кир – Ты заходи. Силер кириңер – Вы заходите. Бис кирдивис – Мы вошли. Силер кирдиңер – Вы вошли. Ол кирди – Он вошел. Олар кирдилер – Они вошли.\n
+               <b>Примечание 2.</b> В конце предложения слова <b> мен, сен, бис, силер </b> являются показателями лица и числа сказуемого. 
+               Например: Мен ажылдаар мен – Я буду работать. Сен келир сен – Ты придешь. Бис ажылдаар бис – Мы будем работать. Силер чугаалаар силер – Вы скажете. Мен ажылчын
+               мен – Я рабочий. Сен башкы сен – Ты учитель. Силер аныяк силер – Вы молоды. Бис бежелээн бис – Нас пятеро.\n
+               В таких предложениях подлежащее можно опустить (можно сказать: Ажылчын болур мен. Келир сен. Ажылдаар бис. Чугаалаар силер), но употребление показателя лица и числа сказуемого обязательно.
+              `,
+              en: `1st p.: мен (I), бис (we). 2nd p.: сен (you sing.), силер (you pl./formal). 3rd p.: ол (he/she), олар (they).
+              <b>Note 1.</b> Personal pronouns in the nominative case are usually used as the subject of a sentence. 
+              For example: Се кир – You come in. Силер кириңер – You come in. Бис кирдивис – We came in. Силер кирдиңер – You came in. Ол кирди – He came in. Олар кирделир – They came in.\n
+              <b>Note 2.</b> At the end of a sentence, the words <b>мен, сен, бис, силер</b> indicate the person and number of the predicate.
+              For example: Ме ажылдаар мен – I will work. Се килир сен – You will come. Бис ажылдаар бис – We will work. Селер чугаалаар силер – You will say. Ме ажылчын
+              мен – I am a worker. Се башкы сен – You are a teacher. Siler anyyak Siler - You are young. Bis bezheleen bis – There are five of us.\n 
+              In such sentences, the subject can be omitted (you can say: Azhylchyn bolur men. Kelir sen. Azhyldaar bis. Chugaalaar Siler), but the use of person and number indicators of the predicate is mandatory.`,
             },
           ],
         },
@@ -1230,7 +1485,12 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
           titleEn: "Vocabulary",
           words: [
             { tuvan: "эмчи", ru: "врач", en: "doctor", audioSrc: "" },
-            { tuvan: "башкы", ru: "учитель", en: "teacher", audioSrc: "" },
+            {
+              tuvan: "башкы",
+              ru: "учитель (учительница)",
+              en: "teacher",
+              audioSrc: "",
+            },
             {
               tuvan: "өөреникчи",
               ru: "ученик",
@@ -1238,23 +1498,164 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
               audioSrc: "",
             },
             { tuvan: "аныяк", ru: "молодой", en: "young", audioSrc: "" },
+            {
+              tuvan: "адаар",
+              ru: "называть",
+              en: "to call (by name)",
+              audioSrc: "",
+            },
             { tuvan: "ажылдакчы", ru: "рабочий", en: "worker", audioSrc: "" },
             {
-              tuvan: "арткан",
+              tuvan: "турар (тур)",
               ru: "стоять, быть",
               en: "to stand, to be",
               audioSrc: "",
             },
             { tuvan: "олурар", ru: "сидеть", en: "to sit", audioSrc: "" },
             {
-              tuvan: "чораар",
-              ru: "ходить, идти",
-              en: "to walk, to go",
+              tuvan: "чыдар (чыт)",
+              ru: "лежать",
+              en: "to lie (on something)",
               audioSrc: "",
             },
-            { tuvan: "таваржыр", ru: "встречать", en: "to meet", audioSrc: "" },
-            { tuvan: "ном", ru: "книга", en: "book", audioSrc: "" },
+            {
+              tuvan: "чораар",
+              ru: "ходить, находиться",
+              en: "to walk, to be located",
+              audioSrc: "",
+            },
+            {
+              tuvan: "ужуражыр",
+              ru: "встречаться",
+              en: "to meet",
+              audioSrc: "",
+            },
+            {
+              tuvan: "келир (кээр)",
+              ru: "приходить",
+              en: "to come",
+              audioSrc: "",
+            },
+            { tuvan: "эжик", ru: "дверь", en: "door", audioSrc: "" },
+            { tuvan: "балык", ru: "рыба", en: "fish", audioSrc: "" },
+            { tuvan: "өртек", ru: "цена", en: "price", audioSrc: "" },
+            { tuvan: "ажык", ru: "польза", en: "benefit, use", audioSrc: "" },
             { tuvan: "солун", ru: "газета", en: "newspaper", audioSrc: "" },
+            {
+              tuvan: "көөр",
+              ru: "смотреть",
+              en: "to look, to watch, to see",
+              audioSrc: "",
+            },
+            { tuvan: "чаа", ru: "новый", en: "new", audioSrc: "" },
+            {
+              tuvan: "эрги",
+              ru: "старый (о предметах, вещах)",
+              en: "old (about things)",
+              audioSrc: "",
+            },
+            { tuvan: "идик", ru: "обувь", en: "shoe", audioSrc: "" },
+            {
+              tuvan: "харыылаар",
+              ru: "отвечать",
+              en: "to response",
+              audioSrc: "",
+            },
+            { tuvan: "эвээш", ru: "мало", en: "few", audioSrc: "" },
+            { tuvan: "хөй", ru: "много", en: "many", audioSrc: "" },
+            { tuvan: "суг", ru: "вода", en: "water", audioSrc: "" },
+            { tuvan: "баар (чоруур)", ru: "пойти", en: "to go", audioSrc: "" },
+            { tuvan: "ном", ru: "книга", en: "book", audioSrc: "" },
+            { tuvan: "ийе", ru: "да", en: "yes", audioSrc: "" },
+            { tuvan: "чок", ru: "нет", en: "no", audioSrc: "" },
+            { tuvan: "эвес", ru: "не", en: "not", audioSrc: "" },
+            { tuvan: "бээр", ru: "давать (дать)", en: "to give", audioSrc: "" },
+            { tuvan: "алыр", ru: "брать", en: "to take", audioSrc: "" },
+          ],
+        },
+        {
+          id: "l5-ex",
+          type: "exercise",
+          titleRu: "Упражнения",
+          titleEn: "Exercises",
+          exercises: [
+            {
+              titleRu: "Упражнение 1",
+              titleEn: "Exercise 1",
+              instrRu: `Составьте короткие предложения с данными глаголами, употребляя слова <b>мен, сен, бис, силер</b> в одних предложениях в роли подлежащего, в других – показателя лица и числа сказуемого.\n
+              Бижиир – писать; дыңнаар – слушать; дыңнаан – слушал; өөренир – учиться; билир – знать; алыр – брать; бээр – давать (дать).`,
+              instrEn: `Create short sentences with these verbs, using the words <b>мен, сен, бис, силер</b> in some sentences as the subject, and in others as the person and number marker of the predicate.\n 
+              Бижиир – to write; дыңнаар – to listen; дыңнаан – listened; өөренир – to study; билир – to know; алыр – to take; бээр – to give (give).`,
+            },
+            {
+              titleRu: "Упражнение 2",
+              titleEn: "Exercise 2",
+              instrRu: `Вместо точек употребите соответствующие показатели лица и числа сказуемого, где это необходимо. Объясните, почему поставили в предложении именно этот, а не другой показатель. В каких предложениях нет необходимости ставить показатели лица и числа?<br>
+              Вы назовете. – Силер адаар … <br>
+              Они будут работать. – Олар ажылдаар …<br>
+              Мы поедем. – Бис чоруур …<br>
+              Ты молодой. – Сен аныяк …<br>
+              Он войдет. – Ол кирер …<br>
+              Я врач. – Мен эмчи …<br>
+              Они придут. – Олар келирлер …<br>
+              `,
+              instrEn: `Instead of periods, use the appropriate markers of person and number of the predicate where necessary. Explain why you used this marker and not another. Which sentences do not require markers of person and number?<br>
+              You'll name them. - Силер адаар … <br>
+              They will work. - Олар ажылдаар …<br>
+              We will go. - Бис чоруур …<br>
+              You are young. - Сен аныяк …<br>
+              He will come in. - Ол кирер …<br>
+              I am a doctor. - Мен эмчи …<br>
+              They will come. - Олар келирлер …<br>`,
+            },
+            {
+              titleRu: "Упражнение 3",
+              titleEn: "Exercise 3",
+              instrRu: `Читайте. Обратите внимание на правильное произношение всех звуков в словах и определите их отличие.\n
+              <i>Ал – аал; ол – оол; даш – дааш; ат – аът; сын – сыын; к=р – к==р; от – оът, эт – эът; чон – чоон; час – чаъс; кат – каът; чүк – чүък; сарыг – саарыг; бо – боо; дүн – дүүн.</i>`,
+              instrEn: `Read. Pay attention to the correct pronunciation of all the sounds in the words and identify their differences.\n
+              <i>Ал – аал; ол – оол; даш – дааш; ат – аът; сын – сыын; к=р – к==р; от – оът, эт – эът; чон – чоон; час – чаъс; кат – каът; чүк – чүък; сарыг – саарыг; бо – боо; дүн – дүүн.</i>`,
+            },
+          ],
+        },
+        {
+          id: "l5-answers",
+          type: "answers",
+          titleRu: "Ответы к упражнениям",
+          titleEn: "Answer Key",
+          exercises: [
+            {
+              titleRu: "Ответы к упражнению 2",
+              titleEn: "Answers to Exercise 2",
+              instrRu: "",
+              instrEn: "",
+              examples: [
+                {
+                  tuvan: `Силер адаар силер. <br>
+              Олар ажылдаар. <br>
+              Бис чоруур бис. <br>
+              Сен аныяк сен. <br>
+              Ол кирер. <br>
+              Мен эмчи мен. <br>
+              Олар келирлер. <br>`,
+                  ru: `Вы назовете.<br>
+                  Они будут работать.<br>
+                  Мы поедем.<br>
+                  Ты молодой. <br>
+                  Он войдет. <br>
+                  Я врач. <br>
+                  Они придут.<br>
+                  `,
+                  en: `You'll call them.<br>
+              They will work.<br>
+              We will go.<br>
+              You are young. <br>
+              He will come in.<br>
+              I am a doctor.<br>
+              They will come.<br>`,
+                },
+              ],
+            },
           ],
         },
       ],
