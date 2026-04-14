@@ -17,8 +17,9 @@ export class AudioService {
       return;
     }
     this.audio = new Audio(src);
-    this.audio.play();
+    this.audio.play().catch(() => this.playingId.set(null));
     this.playingId.set(id);
     this.audio.onended = () => this.playingId.set(null);
+    this.audio.onerror = () => this.playingId.set(null);
   }
 }

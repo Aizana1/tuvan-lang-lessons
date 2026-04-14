@@ -1737,7 +1737,7 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
           ],
         },
         {
-          id: "l6-words",
+          id: "l6-words-a",
           type: "vocabulary",
           titleRu: "Вопросы",
           titleEn: "Questions",
@@ -1847,7 +1847,7 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
           ],
         },
         {
-          id: "l6-words",
+          id: "l6-words-b",
           type: "vocabulary",
           titleRu: "Выражения",
           titleEn: "Expressions",
@@ -2075,7 +2075,7 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
           ],
         },
         {
-          id: "l7-phrases",
+          id: "l7-phrases-a",
           type: "phrases",
           titleRu: "Вопросы",
           titleEn: "Questions",
@@ -2209,7 +2209,7 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
           ],
         },
         {
-          id: "l7-phrases",
+          id: "l7-phrases-b",
           type: "phrases",
           titleRu: "Предложения",
           titleEn: "Sentences",
@@ -2253,7 +2253,7 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
           ],
         },
         {
-          id: "l7-phrases",
+          id: "l7-phrases-c",
           type: "phrases",
           titleRu: "Вопросы и Ответы",
           titleEn: "Questions and Answers",
@@ -2744,6 +2744,27 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
       ],
     },
   ];
+
+  constructor() {
+    this.assignAudioPaths();
+  }
+
+  /** Auto-assigns audioSrc paths for phrases/words that don't have one yet.
+   *  Convention: audio/lesson{id}/{sectionId}/{1-based-index}.mp3
+   */
+  private assignAudioPaths(): void {
+    this.data.forEach((lesson) => {
+      lesson.sections.forEach((section) => {
+        const base = `audio/lesson${lesson.id}/${section.id}`;
+        section.phrases?.forEach((p, i) => {
+          if (!p.audioSrc) p.audioSrc = `${base}/${i + 1}.mp3`;
+        });
+        section.words?.forEach((w, i) => {
+          if (!w.audioSrc) w.audioSrc = `${base}/${i + 1}.mp3`;
+        });
+      });
+    });
+  }
 
   getAll(): Lesson[] {
     return this.data;
