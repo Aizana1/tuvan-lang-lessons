@@ -1674,25 +1674,28 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
           type: "grammar",
           titleRu: "Гармония гласных",
           titleEn: "Vowel Harmony",
-          titleTuvan: "Ажык үннерниң чаңгыланышкыны",
+          titleTuvan: "Ажык үннерниң аяннажылгазы",
           rules: [
             {
-              titleRu: "Передние (мягкорядные) гласные",
-              titleEn: "Front (soft-row) vowels",
-              ru: "э, ээ, и, ии, ө, өө, ү, үү, э, ии — произносятся передней частью языка.",
-              en: "э, ээ, и, ии, ө, өө, ү, үү, э, ии — pronounced with the front part of the tongue.",
-            },
-            {
-              titleRu: "Задние (твёрдорядные) гласные",
-              titleEn: "Back (hard-row) vowels",
-              ru: "а, аа, ы, ыы, о, оо, у, уу, а, ыы — произносятся задней частью языка.",
-              en: "а, аа, ы, ыы, о, оо, у, уу, а, ыы — pronounced with the back part of the tongue.",
-            },
-            {
-              titleRu: "Правило гармонии",
-              titleEn: "Harmony rule",
-              ru: "Если в первом слоге передний гласный — все последующие слоги тоже с передними гласными. Если задний — все с задними. Пример: эш-телер, аът-тар.",
-              en: "If the first syllable has a front vowel, all following syllables use front vowels only. If back — all back. Example: эш-телер, аът-тар.",
+              titleRu: "Гармония гласных",
+              titleEn: "Vowel Harmony",
+              ru: `Важное значение в тувинском языке имеет деление гласных на две группы по характеру их произношения: <br>
+              а) группа мягкорядных гласных, произносимых передней частью спинки языка – <b>э, и, ө, ү, ээ, ии, өө, үү, эъ, иъ, өъ, үъ<b>;
+              б) группа твердорядных гласных, произносимых задней частью спинки языка – <b>а, ы, о, у, аа, ыы, оо, уу, аъ, ыъ, оъ, уъ<b>.<br>
+              Гармония гласных означает возможность или невозможность сочетания тех или иных гласных в пределах слова. Основные положения гармонии гласных тувинского языка гласят:
+              <ol>
+              <li>если в первом слоге имеется какой-нибудь гласный мягкого ряда (э, ээ, эъ, и, ии, иъ, ө, өө, өъ, ү, үү, үъ), то в последующих слогах могут употребляться только гласные мягкого ряда: эм – лекарство, эмнер – лекарства, эмнеривис – наши лекарства;</li>
+              <li>если в первом слоге слова имеется какой-нибудь гласный твердого ряда (а, аа, аъ, ы, ыы, ыъ, о, оо, оъ, у, уу, уъ), то в последующих слогах могут употребляться только гласные твердого ряда: хол – рука, холум – моя рука, холдарым – мои руки.</li>
+              </ol>
+              `,
+              en: `In the Tuvan language, the division of vowels into two groups based on their pronunciation is important: <br>
+              a) the group of soft vowels, pronounced with the front of the tongue – <b>э, и, ө, ү, ээ, ии, өө, үү, эъ, иъ, өъ, үъ<b>;
+              b) the group of hard vowels, pronounced with the back of the tongue – <b>а, ы, о, у, аа, ыы, оо, уу, аъ, ыъ, оъ, уъ<b>.<br>
+              Vowel harmony refers to the possibility or impossibility of combining certain vowels within a word. The basic principles of vowel harmony in the Tuvan language are as follows:
+              <ol>
+              <li>If the first syllable contains a soft vowel (э, ээ, эъ, и, ии, иъ, ө, өө, өъ, ү, үү, үъ), then only soft vowels may be used in subsequent syllables: эм – medicine, эмнер – medicines, эмнеривис – our medications;</li>
+              <li>If the first syllable of a word contains a hard vowel (а, аа, аъ, ы, ыы, ыъ, о, оо, оъ, у, уу, уъ), then only hard vowels may be used in subsequent syllables: хол – hand, холум – my hand, холдарым – my hands.</li>
+              </ol>`,
             },
           ],
         },
@@ -1703,57 +1706,197 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
           titleEn: "Plural of Nouns",
           rules: [
             {
-              titleRu: "-лар/-лер — после гласных, н, ң, р, й",
-              titleEn: "-лар/-лер — after vowels, н, ң, р, й",
-              ru: "чер-лер (земли), даг-лар (горы), ай-лар (месяцы), хеме-лер (лодки).",
-              en: "чер-лер (lands), даг-лар (mountains), ай-лар (months), хеме-лер (boats).",
-            },
-            {
-              titleRu: "-нар/-нер — после з, ж, л",
-              titleEn: "-нар/-нер — after з, ж, л",
-              ru: "хем-нер (реки), сан-нар (числа), мал-дар (животные).",
-              en: "хем-нер (rivers), сан-нар (numbers), мал-дар (animals).",
-            },
-            {
-              titleRu: "-дар/-дер — после л, м",
-              titleEn: "-дар/-дер — after л, м",
-              ru: "хөл-дер (озёра), хол-дар (руки).",
-              en: "хөл-дер (lakes), хол-дар (hands).",
-            },
-            {
-              titleRu: "-тар/-тер — после глухих",
-              titleEn: "-тар/-тер — after voiceless consonants",
-              ru: "орук-тар (дороги), белек-тер (подарки).",
-              en: "орук-тар (roads), белек-тер (gifts).",
+              titleRu: "Множественное число",
+              titleEn: "Plural of Nouns",
+              ru: `<ol>
+              Множественное число существительных образуется при помощи окончаний <b>-лар, -лер, -нар, -нер, -дар, -дер, -тар, -тер</b>, прибавляемых к основе:
+              <li>если основа слова оканчивается на гласные или согласные <b>р, г, й</b>, то прибавляется окончание <b>-лар</b> или <b>-лер</b>, например: чер + лер = черлер – земли, места; салбыр + лар = салбырлар – отделения; өг + лер = өглер – юрты; даг + лар = даглар – горы; ай + лар = айлар – месяцы; тей + лер = тейлер – сопки; хеме + лер = хемелер – лодки;</li>
+              <li>если основа слова оканчивается на согласные <b>м, н, ң</b>, то прибавляется окончание <b>-нар</b> или <b>-нер</b>, например: хем + нер = хемнер – реки; сан + нар = саннар – числа; чең + нер = чеңнер – рукава; аң + нар = аңнар – звери; согун + нар = согуннар – стрелы;</li>
+              <li>если основа слова оканчивается на согласный <b>л</b>, то прибавляется окончание <b>-дар</b> или <b>-дер</b>, например, хөл + дер = хөлдер – озёра; хол + дар = холдар – руки;</li>
+              <li>если основа слова оканчивается на глухие согласные, то прибавляется окончание <b>-тар</b> или <b>-тер</b>, например: орук + тар = оруктар – дороги; белек + тер = белектер – подарки.</li>
+              </ol>`,
+              en: `<ol>
+              The plural of nouns is formed using the endings <b>-лар, -лер, -нар, -нер, -дар, -дер, -тар, -тер</b>, added to the stem:
+              <li>if the stem of a word ends in the vowels or consonants <b>р, г, й</b>, then the ending <b>-лар</b> or <b>-лер</b> is added, for example: чер + лер = черлер – lands, places; салбыр + лар = салбырлар – departments; өг + лер = өглер – yurts; даг + лар = даглар – mountains; ай + лар = айлар – months; тей + лер = тейлер – hills; heme + ler = hemeler - boats;</li> 
+              <li>if the stem of the word ends in the consonants <b>м, н, ң</b>, then the ending <b>-нар</b> or <b>-нер</b> is added, for example: хем + нер = хемнер - rivers; сан + нар = саннар – numbers; чең + нер = чеңнер – sleeves; аң + нар = аңнар – animals; согун + нар = согуннар – arrows;</li> 
+              <li>if the stem of the word ends in a consonant <b>л</b>, then the ending <b>-дар</b> or <b>-дер</b> is added, for example, хөл + дер = хөлдер - lakes; хол + дар = холдар – hands;</li>
+              <li>If the stem of a word ends in voiceless consonants, the ending <b>-тар</b> or <b>-тер</b> is added, for example: орук + тар = оруктар – roads; белек + тер = белектер – gifts.</li>
+              </ol>`,
             },
           ],
         },
         {
-          id: "l6-phrases",
-          type: "phrases",
+          id: "l6-words",
+          type: "vocabulary",
+          titleRu: "Вопросы",
+          titleEn: "Questions",
+          words: [
+            {
+              tuvan: "Кайда?",
+              ru: "Где? (про статику)",
+              en: "Where? (static)",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кайда турарыл?",
+              ru: "Где он(а) находится?",
+              en: "Where is he/she?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кайда чор?",
+              ru: "Где он(а) ходит (находится)?",
+              en: "Where is he/she going (located)?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кайда силер?",
+              ru: "Где вы?",
+              en: "Where are you?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кайда чурттап турар силер?",
+              ru: "Где вы живете?",
+              en: "Where do you live?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Каяа?",
+              ru: "Где? (про динамику)",
+              en: "Where? (dynamic)",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Каяа чордуңар?",
+              ru: "Где вы ходили (находились)?",
+              en: "Where have you been?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Каяа келир силер?",
+              ru: "Куда вы приедете (придете)?",
+              en: "Where will you come?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Каяа дужуп алыр бис?",
+              ru: "Где мы встретимся?",
+              en: "Where will we meet?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кажан?",
+              ru: "Когда?",
+              en: "When?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кажан келир силер?",
+              ru: "Когда вы придете (приедете)?",
+              en: "When will you come?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кажан келдиңер?",
+              ru: "Когда вы пришли (приехали)?",
+              en: "When did you come?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кажан келир мен?",
+              ru: "Когда я приду?",
+              en: "When should/will I come?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кажан эгелээрил?",
+              ru: "Когда начнется?",
+              en: "When will it start?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кайнаар?",
+              ru: "Куда?",
+              en: "Where? (direction)",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кайнаар баар силер?",
+              ru: "Куда пойдете?",
+              en: "Where will you go?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кайнаар баар бис?",
+              ru: "Куда пойдем?",
+              en: "Where will we go?",
+              audioSrc: "",
+            },
+          ],
+        },
+        {
+          id: "l6-words",
+          type: "vocabulary",
           titleRu: "Выражения",
           titleEn: "Expressions",
-          phrases: [
+          words: [
             {
-              tuvan: "Кош келдиңер!",
+              tuvan: "Кирип моорлаңар!",
               ru: "Добро пожаловать!",
               en: "Welcome!",
               audioSrc: "",
             },
             {
-              tuvan: "Биске кирип келиңер.",
-              ru: "Заходите к нам.",
-              en: "Please come to us.",
+              tuvan: "Кирип болур бе?",
+              ru: "Можно войти?",
+              en: "Can I (we) come in?",
               audioSrc: "",
             },
             {
-              tuvan: "Шай иjer алыңар.",
-              ru: "Выпейте чаю.",
-              en: "Have a cup of tea.",
+              tuvan: "Кириңер!",
+              ru: "Входите!",
+              en: "Come in!",
               audioSrc: "",
             },
             {
-              tuvan: "Үе каш болган-дыр?",
+              tuvan: "Бээр олуруңар",
+              ru: "Садитесь сюда",
+              en: "Sit here",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Бээр эртиңер",
+              ru: "Пройдите сюда",
+              en: "Please come here (to us)",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Бистиинге келиңер",
+              ru: "Приходите к нам",
+              en: "Please come to us (our house)",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Шайдан ишкеш барыңар",
+              ru: "Выпейте чашку чая",
+              en: "Have a cup of tea",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Маңаа таакпылап болур ирги бе?",
+              ru: "Здесь можно курить?",
+              en: "Is it allowed to smoke here?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Чок, маңаа таакпылап болбас",
+              ru: "Нет, здесь нельзя курить.",
+              en: "No, it's prohibited to smoke here",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Үе каш?",
               ru: "Сколько времени?",
               en: "What time is it?",
               audioSrc: "",
@@ -1763,6 +1906,102 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
               ru: "Когда начнётся?",
               en: "When does it start?",
               audioSrc: "",
+            },
+          ],
+        },
+        {
+          id: "l6-ex",
+          type: "exercise",
+          titleRu: "Упражнения",
+          titleEn: "Exercises",
+          exercises: [
+            {
+              titleRu: "Упражнение 1",
+              titleEn: "Exercise 1",
+              instrRu: `Образуйте форму множественного числа существительных.<br>
+              Айтырыг – вопрос; демир – железо; хурал – собрание, совещание; бажың – дом; бөлүк – группа; чапсар – перерыв; садыг – магазин; терек – тополь; базаар – рынок, базар; школа; класс; оол – мальчик; кыс – девочка; херим – ограда; чурук – рисунок, портрет; карта; хөйлең – рубашка; дыргак – ноготь, расческа.`,
+              instrEn: `Form the plural form of nouns.<br> 
+              Айтырыг – question; демир – iron; хурал - meeting, meeting; бажың – house; бөлүк – group; чапсар – break; садыг – shop; терек – poplar; базаар – market, bazaar; школа - school; class - class; оол – boy; кыс – girl; херим – fence; чурук – drawing, portrait; карта - map; хөйлең – shirt; дыргак - nail, comb.`,
+            },
+            {
+              titleRu: "Упражнение 2",
+              titleEn: "Exercise 2",
+              instrRu: `Подчеркните окончания, которые могут присоединяться к данным словам. Обратите внимание на взаимосвязь гласных основы и окончания в соответствии с законом гармонии гласных. Установите значения слов с окончаниями при помощи знающих тувинский язык.<br>
+              Солун(-дар, -нер, -нар, -лер, -нарывыс) – газета; <br>
+              сөс (-лар, -дер, -тер, -терниё, -нар) – слово; <br>
+              соңга (-нер, -дар, -тер, -лар, -нар, -ларывыс, -дар) – окно.
+              `,
+              instrEn: `Underline the endings that can be added to these words. Note the relationship between the vowels of the stem and ending according to the law of vowel harmony. Determine the meanings of the words with the endings with the help of Tuvan speakers.<br>
+              Солун(-дар, -нер, -нар, -лер, -нарывыс) – newspaper; <br>
+              сөс (-лар, -дер, -тер, -терниң, -нар) – word; <br>
+              соңга (-нер, -дар, -тер, -лар, -нар, -ларывыс, -дар) – window.
+              `,
+            },
+          ],
+        },
+        {
+          id: "l6-answers",
+          type: "answers",
+          titleRu: "Ответы к упражнениям",
+          titleEn: "Answer Key",
+          exercises: [
+            {
+              titleRu: "Ответы к упражнению 1",
+              titleEn: "Answers to Exercise 1",
+              instrRu: "",
+              instrEn: "",
+              examples: [
+                {
+                  tuvan: `айтырыг - айтырыглар,<br> демир - демирлер, <br> хурал - хуралдар, <br>
+                  бажың - бажыңнар, <br> бөлүк - бөлүктер, <br> чапсар - чапсарлар, <br>
+                  садыг - садыглар, <br> терек - теректер, <br> базаар - базаарлар, <br>
+                  школа - школалар, <br> класс - класстар, <br> оол - оолдар, <br> 
+                  кыс - кыстар, <br> херим - херимнер, <br> чурук - чуруктар, <br> 
+                  карта - карталар, <br> хөйлең - хөйлеңнер, <br> дыргак - дыргактар.`,
+                  ru: `айтырыг - айтырыглар,<br> демир - демирлер, <br> хурал - хуралдар, <br>
+                  бажың - бажыңнар, <br> бөлүк - бөлүктер, <br> чапсар - чапсарлар, <br>
+                  садыг - садыглар, <br> терек - теректер, <br> базаар - базаарлар, <br>
+                  школа - школалар, <br> класс - класстар, <br> оол - оолдар, <br> 
+                  кыс - кыстар, <br> херим - херимнер, <br> чурук - чуруктар, <br> 
+                  карта - карталар, <br> хөйлең - хөйлеңнер, <br> дыргак - дыргактар.
+                  `,
+                  en: `айтырыг - айтырыглар,<br> демир - демирлер, <br> хурал - хуралдар, <br>
+                  бажың - бажыңнар, <br> бөлүк - бөлүктер, <br> чапсар - чапсарлар, <br>
+                  садыг - садыглар, <br> терек - теректер, <br> базаар - базаарлар, <br>
+                  школа - школалар, <br> класс - класстар, <br> оол - оолдар, <br> 
+                  кыс - кыстар, <br> херим - херимнер, <br> чурук - чуруктар, <br> 
+                  карта - карталар, <br> хөйлең - хөйлеңнер, <br> дыргак - дыргактар.`,
+                },
+              ],
+            },
+            {
+              titleRu: "Ответы к упражнению 2",
+              titleEn: "Answers to Exercise 2",
+              instrRu: "",
+              instrEn: "",
+              examples: [
+                {
+                  tuvan: ` Солуннар,<br> 
+                  Солуннарывыс), <br>
+                  сөстер, <br> 
+                  сөстерниң, <br>
+                  соңгалар,  <br>
+                  соңгаларывыс. <br>`,
+                  ru: ` газеты, <br>
+                  наши газеты, <br>
+                  слова, <br>
+                  слов, <br>
+                  окна, <br>
+                  наши окна.
+                  `,
+                  en: `newspapers, <br>
+                  our newspapers, <br>
+                  words, <br>
+                  words/ of words, <br>
+                  windows, <br>
+                  our windows.`,
+                },
+              ],
             },
           ],
         },
@@ -1780,106 +2019,359 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
         {
           id: "l7-cases",
           type: "grammar",
-          titleRu: "Семь падежей",
-          titleEn: "Seven Cases",
+          titleRu: "Склонение существительных",
+          titleEn: "Declension of Nouns",
+          titleTuvan: "Чүве аттарның падежтерге өскерлири",
           rules: [
             {
-              titleRu: "1. Именительный падеж (кым? чүl?)",
-              titleEn: "1. Nominative (кым? чүl?)",
-              ru: "Основная форма. Примеры: кижи (человек), орук (дорога), хол (рука).",
-              en: "Basic form. Examples: кижи (person), орук (road), хол (hand).",
-            },
-            {
-              titleRu: "2. Родительный падеж (кымның? чүнүң?)",
-              titleEn: "2. Genitive (кымның? чүнүң?)",
-              ru: "Суффикс -ның/-ниң/-туң/-түң/-дуң/-дүң/-туг/-түг. Примеры: кижиниң, оруктуң, холдуң.",
-              en: "Suffix -ның/-ниң. Examples: кижиниң, оруктуң, холдуң.",
-            },
-            {
-              titleRu: "3. Дательный падеж (кымга? чүге?)",
-              titleEn: "3. Dative (кымга? чүге?)",
-              ru: "Суффикс -га/-ге/-ка/-ке. Примеры: кижиге, орукка, холга.",
-              en: "Suffix -га/-ге/-ка/-ке. Examples: кижиге, орукка, холга.",
-            },
-            {
-              titleRu: "4. Винительный падеж (кымны? чүнү?)",
-              titleEn: "4. Accusative (кымны? чүнү?)",
-              ru: "Суффикс -ны/-ни/-ты/-ти/-ды/-ди. Примеры: кижини, оруктү, холды.",
-              en: "Suffix -ны/-ни. Examples: кижини, оруктү, холды.",
-            },
-            {
-              titleRu: "5. Местный падеж (кымда? чүде?)",
-              titleEn: "5. Locative (кымда? чүде?)",
-              ru: "Суффикс -да/-де/-та/-те. Примеры: кижиде, оруктда, холда.",
-              en: "Suffix -да/-де/-та/-те. Examples: кижиде, оруктда, холда.",
-            },
-            {
-              titleRu: "6. Исходный падеж (кымдан? чүден?)",
-              titleEn: "6. Ablative (кымдан? чүден?)",
-              ru: "Суффикс -дан/-ден/-тан/-тен. Примеры: кижиден, оруктан, холдан.",
-              en: "Suffix -дан/-ден/-тан/-тен. Examples: кижиден, оруктан, холдан.",
-            },
-            {
-              titleRu: "7. Направительный падеж (кымче? чүже?)",
-              titleEn: "7. Directive (кымче? чүже?)",
-              ru: "Суффикс -же/-че. Примеры: кижиже, орукче, холже.",
-              en: "Suffix -же/-че. Examples: кижиже, орукче, холже.",
+              titleRu: "Семь падежей",
+              titleEn: "Seven Cases",
+              ru: `<ol>
+              В тувинском языке 7 падежей:
+              <li><b>адаарының падежи</b> (именительный падеж) <i>кым? чүү? </i>(кто? что?) – кижи (человек), орук (дорога), даш (камень), хол (рука);</li>
+              <li><b>хамаарыштырарының падежи</b> (родительный падеж) – <i>кымның? чүнүң?</i> (кого? чего? чей?) – кижиниң, оруктуң, даштың холдуң;</li>
+              <li><b>онаарының падежи</b> (винительный падеж) – <i>кымны? чүнү? </i>(кого? что?) – кижини, орукту, дашты, холду;</li>
+              <li><b>бээриниң падежи</b> (дательный падеж) – <i>кымга? чүге?</i> (кому? чему?) – кижиге, орукка, дашка, холга; </li>
+              <li><b>турарының падежи</b> (местный падеж) – <i>кымда? чүде?</i> (у кого? у чего? где?) – кижиде, орукта, дашта, холда;</li>
+              <li><b>үнериниң падежи</b> (исходный падеж) – <i>кымдан? чүден? кайыын? </i> (от кого? от чего? откуда?) – кижиден, оруктан, даштан, холдан;</li>
+              <li><b>углаарының падежи</b> (направительный падеж) – <i>кымче? чүүже? кайнаар? </i> (к кому? к чему? куда?) – кижиже, орукче, дашче, холче. </li>
+              </ol>
+              
+              <ol>
+              Запомните:
+              <li>Вопросы <b>кым?</b> (кто?), <b>кымның? </b>(кого?), <b>кымны? </b>(кого?), <b>кымга? </b>(кому?) <b>кымда? </b>(у кого?), <b>кымдан? </b>(от кого?), <b>кымче? </b>(к кому?) употребляются только по отношению к человеку.</li>
+              <li>Вопросы <b>чүү?</b> (что?),<b>чүнүң? </b>(чего? чей?), <b>чүнү? </b>(что?), <b>чүге?</b> (чему?), <b>чүде? </b>(у чего? где?), <b>чүден? </b>(от чего? откуда?), <b>чүүже</b> (к чему? куда?) употребляются по отношению ко всему живому и неживому, кроме человека, 
+              например: чүү? (что?) – даш (камень), инек (корова), адыг (медведь); чүнүң? (чего? чей?) – даштың, инектиң, адыгның; чүнү? (что?) – дашты, инекти, адыгны и т.д.</li>
+              </ol>
+              `,
+              en: `<ol> 
+              There are 7 cases in the Tuvan language: 
+              <li><b>adaarynyn cases</b> (nominative case) <i>kym? what? </i>(who? what?) – kizhi (person), oruk (road), dash (stone), khol (hand);</li> 
+              <li><b>hamaaryshtyrarynyn cases</b> (genitive case) – <i>kymnyn? chunun?</i> (whom? what? whose?) – kizhinin, oruktun, dashtyn holdun;</li> 
+              <li><b>onaarynyn cases</b> (accusative case) – <i>kymny? what? </i>(who? what?) – kizhini, oruktu, dashty, holdu;</li> 
+              <li><b>beerinin cases</b> (dative case) – <i>kymga? chүge?</i>(to whom? what?) – kizhige, orukka, dashka, kholga; </li> 
+              <li><b>turarynyn cases</b> (local case) – <i>kymda? chude?</i>(from whom? from what? where?) – kizhide, orukta, dashta, holda;</li> 
+              <li><b>үnerinѣ cases</b> (initial case) – <i>kymdan? wonderful? kayyn? </i> (from whom? from what? where from?) – kizhiden, oruktan, dashtan, holdan;</li> 
+              <li><b>uglaarynyn cases</b> (directive case) – <i>kymche? someone else? kainaar? </i> (to whom? to what? where?) – kizhizhe, orukche, dashche, kholche. </li> 
+              </ol> 
+              
+              <ol> Remember: 
+              <li>Questions <b>kym?</b> (who?), <b>kymnyң? </b>(who?), <b>kymny? </b>(who?), <b>kymga? </b>(to whom?) <b>kymda? </b>(from whom?), <b>kymdan? </b>(from whom?), <b>kymche? </b>(to whom?) are used only in relation to a person.</li> 
+              <li>Questions <b>chүү?</b> (what?),<b>chүүң? </b>(what? whose?), <b>chүnү? </b>(what?), <b>what?</b> (what?), <b>why? </b>(at what? where?), <b>wonderful? </b>(from what? where from?), <b>үүже</b> (to what? where?) are used in relation to everything living and nonliving, except humans, 
+              for example: what? (what?) – dash (stone), inek (cow), adyg (bear); chunun? (what? whose?) – dashtyn, inektin, adygnyn; what? (what?) – dashty, inekti, adygny, etc.</li> 
+              </ol>`,
             },
           ],
         },
         {
           id: "l7-phrases",
           type: "phrases",
-          titleRu: "Вопросы и ответы",
-          titleEn: "Questions & Answers",
+          titleRu: "Вопросы",
+          titleEn: "Questions",
+          phrases: [
+            {
+              tuvan: "Канчаар? Канчап?",
+              ru: "Как?",
+              en: "How?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Канчаарыл?.",
+              ru: "Как быть? Что делать?",
+              en: "What to do?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Канчаар кылырыл?",
+              ru: "Как сделать?",
+              en: "How to do?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Канчаар кылганыл?",
+              ru: "Как (это) было сделано?",
+              en: "How was it done?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Канчап ындыг боор?",
+              ru: "Как же так?",
+              en: "How so?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Канчаптыңар?",
+              ru: "Как (вы) сделали?",
+              en: "How did you do it?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кандыг?",
+              ru: "Какой?",
+              en: "What/which?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кандыг бодалдыг силер?",
+              ru: "Какие у вас есть предложения (мысли)?",
+              en: "What suggestions (thoughts) do you have?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кандыг-дыр?",
+              ru: "Ну и как? Ну и каково?",
+              en: "So how is it?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кандыг айтырыг барыл?",
+              ru: "Какой есть вопрос?",
+              en: "What is the question?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кандыг айтырыглыг чор силер?",
+              ru: "С каким вопросом вы пришли?",
+              en: "What question do you have?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кандыг херектиг чор силер?",
+              ru: "По какому делу вы пришли?",
+              en: "What is your business here?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кайыын? Кайын?",
+              ru: "Откуда?",
+              en: "Where from?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кайыын келдиңер?",
+              ru: "Откуда вы пришли (приехали)?",
+              en: "Where did you come from?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кайыын тып алырыл?",
+              ru: "Откуда бы найти (достать)?",
+              en: "Where to find (get) it from?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кайын ындыг боор?!",
+              ru: "Откуда (с чего бы) это так?!",
+              en: "Where (why) is this so?!",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Каш? Чеже?",
+              ru: "Сколько?",
+              en: "How many (much)",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Каш шак-тыр?",
+              ru: "Сколько времени?",
+              en: "What time is it?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Каш (чеже) кижи силер?",
+              ru: "Сколько вас человек?",
+              en: "How many of you are there?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Каш шакта келир мен?",
+              ru: "Во сколько мне прийти?",
+              en: "What time should I come?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Каш шакта ужуражып алыр бис? ",
+              ru: "Во сколько мы встретимся?",
+              en: "What time shall we meet?",
+              audioSrc: "",
+            },
+          ],
+        },
+        {
+          id: "l7-phrases",
+          type: "phrases",
+          titleRu: "Предложения",
+          titleEn: "Sentences",
+          phrases: [
+            {
+              tuvan: "Мону меңээ тайылбырлап берип көрүңерем",
+              ru: "Объясните, пожалуйста, мне это",
+              en: "Please explain this to me",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Айтып берип көрүңер",
+              ru: "Объясните (покажите, укажите), пожалуйста",
+              en: "Please explain (show, indicate)",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Бижип берип көрүңер",
+              ru: "Напишите, пожалуйста",
+              en: "Please write",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Айтырып алыйн",
+              ru: "Спрошу-ка",
+              en: "Let me ask",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Бижип алыйн",
+              ru: "Напишу-ка.",
+              en: "Let me write it down.",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Сактып алыйн",
+              ru: "Запомню-ка",
+              en: "Let me remember this",
+              audioSrc: "",
+            },
+          ],
+        },
+        {
+          id: "l7-phrases",
+          type: "phrases",
+          titleRu: "Вопросы и Ответы",
+          titleEn: "Questions and Answers",
           phrases: [
             {
               tuvan: "Бо чүл?",
               ru: "Что это?",
-              en: "What is this?",
+              en: "What is it?",
               audioSrc: "",
             },
             {
-              tuvan: "Бо бажың-дыр.",
-              ru: "Это дом.",
-              en: "This is a house.",
+              tuvan: "Бо бажың-дыр",
+              ru: "Это дом",
+              en: "It's a house",
               audioSrc: "",
             },
             {
-              tuvan: "Ооң ады кандыгыл?",
+              tuvan: "Мону чүү дээрил?",
               ru: "Как это называется?",
-              en: "What is this called?",
+              en: "How is it called?",
               audioSrc: "",
             },
             {
-              tuvan: "Силерге чүл херек?",
+              tuvan: "Мону тывалап «эжик» дээр",
+              ru: "Это по-тувински называется «эжик» (дверь).",
+              en: "It's called «эжик» (door) in Tuvan",
+              audioSrc: "",
+            },
+            {
+              tuvan: "А бо чүл?",
+              ru: "А это что?",
+              en: "And what is it?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Бо садыг-дыр",
+              ru: "Это магазин.",
+              en: "It's a shop",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Силерге чүү херек ирги?",
               ru: "Что вам нужно?",
               en: "What do you need?",
               audioSrc: "",
             },
             {
-              tuvan: "Бону алырым бе?",
-              ru: "Можно мне взять это?",
-              en: "May I take this?",
+              tuvan: "Мону ап болур бе?",
+              ru: "Можно это взять?",
+              en: "May I take it?",
               audioSrc: "",
             },
             {
-              tuvan: "Хөй четтирдим.",
-              ru: "Большое спасибо.",
-              en: "Many thanks.",
+              tuvan: "Ийе, болур",
+              ru: "Да, можно",
+              en: "Yes, you may",
               audioSrc: "",
             },
             {
-              tuvan: "Дыка дузалаттыңар.",
-              ru: "Вы очень помогли мне.",
-              en: "You helped me a lot.",
+              tuvan: "Улуу-биле четтирдим",
+              ru: "Большое спасибо",
+              en: "Thank you very much",
               audioSrc: "",
             },
             {
-              tuvan: "Дузалашкаңар дээш четтирдим.",
-              ru: "Спасибо за помощь.",
-              en: "Thank you for your help.",
+              tuvan: "Четтирдим",
+              ru: "Спасибо",
+              en: "Thank you",
               audioSrc: "",
+            },
+            {
+              tuvan: "Ажырбас",
+              ru: "Не за что (пожалуйста, ничего)",
+              en: "You are welcome",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Меңээ дыка-ла дузаладыңар",
+              ru: "Вы мне очень помогли",
+              en: "You helped me a lot",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Дузалааныңар дээш четтирдивис",
+              ru: "Спасибо за помощь (содействие)",
+              en: "Thank you for your help (assistance)",
+              audioSrc: "",
+            },
+          ],
+        },
+        {
+          id: "l7-ex",
+          type: "exercise",
+          titleRu: "Упражнения",
+          titleEn: "Exercises",
+          exercises: [
+            {
+              titleRu: "Упражнение 1",
+              titleEn: "Exercise 1",
+              instrRu: `Просклоняйте слова письменно по падежам, проставляя к ним сверху соответствующие вопросы.<br>
+              <i>Чолаачы (шофер), аът (лошадь), машина, суг (вода), демир (железо), оол (мальчик), тон (шуба, пальто), чогаалчы (писатель).</i>`,
+              instrEn: `Decline words in writing by case, placing the corresponding questions above them. <br>
+              <i>Чолаачы (driver), аът (horse), машина, суг (water), демир (iron), оол (boy), тон (fur coat, overcoat), чогаалчы (writer).</i>`,
+            },
+            {
+              titleRu: "Упражнение 2",
+              titleEn: "Exercise 2",
+              instrRu: `Образуйте множественное число и измените слова по падежам.<br>
+              <i>Салаа (палец), саазын (бумага), ыяш (дерево), кыс (девушка), шак (часы).</i><br>
+              <b>Образец:</b> салаа + лар = салаалар.<br>
+              А.п. салаалар<br>
+              Б.п. салааларга<br>
+              О.п. салааларны<br>
+              Х.п. салааларныё<br>
+              Т.п. салааларда<br>
+              Ү.п. салаалардан<br>
+              У.п. салааларже<br>
+              `,
+              instrEn: `Form the plural and change the words according to case.<br>
+              <i>Салаа (finger), саазын (paper), ыяш (tree), кыс (girl), шак (watch).</i><br>
+              <b>Example:</b> салаа + лар = салаалар.<br>
+              А.п. салаалар<br>
+              Б.п. салааларга<br>
+              О.п. салааларны<br>
+              Х.п. салааларныё<br>
+              Т.п. салааларда<br>
+              Ү.п. салаалардан<br>
+              У.п. салааларже<br>
+              `,
             },
           ],
         },
@@ -1901,16 +2393,56 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
           titleEn: "Present Tense",
           rules: [
             {
-              titleRu: "Утвердительная форма",
+              titleRu: "Положительная форма",
               titleEn: "Affirmative form",
-              ru: "Мен кылып тур мен. Сен кылып тур сен. Ол кылып тур. Бис кылып тур бис. Олар кылып тур-лар.",
-              en: "I am doing. You are doing. He is doing. We are doing. They are doing.",
+              ru: `<b>Чаңгыстың саны – единственное число</b><br>
+              1 лицо. Мен кылып тур мен – Я делаю<br>
+              2 лицо. Сен кылып тур сен – Ты делаешь<br>
+              3 лицо. Ол кылып тур – Он делает<br>
+              Уважительная форма. Силер кылып тур силер – Ты делаешь<br>
+              
+              <b>хөйнүң саны – множественное число</b><br>
+              1 лицо. Бис кылып тур бис – Мы делаем<br>
+              2 лицо. Силер кылып тур силер – Вы делаете<br>
+              3 лицо. Олар кылып тур(лар) – Они делают
+              `,
+              en: `<b>Чаңгыстың саны – singular form</b><br>
+              1. Мен кылып тур мен – I do<br>
+              2. Сен кылып тур сен – You do<br>
+              3. Ол кылып тур – He/She/It does<br>
+              Formal/Respectful form to one person. Силер кылып тур силер – You do<br>
+              
+              <b>хөйнүң саны – plural form</b><br>
+              1. Бис кылып тур бис – We do<br>
+              2. Силер кылып тур силер – You do<br>
+              3. Олар кылып тур(лар) – They do
+              `,
             },
             {
               titleRu: "Отрицательная форма",
               titleEn: "Negative form",
-              ru: "Мен кылып тур мен эвес. Сен кылып тур сен эвес. Ол кылып тур эвес.",
-              en: "I am not doing. You are not doing. He is not doing.",
+              ru: `<b>Чаңгыстың саны – единственное число</b><br>
+            1.Мен кылбайн тур мен – Я не делаю<br>
+            2.Сен кылбайн тур сен – Ты не делаешь<br>
+            3.Ол кылбайн тур – Он не делает<br>
+            Уважительная форма. Силер кылбайн тур силер – Вы не делаете<br>
+
+            <b>хөйнүң саны – множественное число</b><br>
+             1.Бис кылбайн тур бис – Мы не делаем<br>
+             2.Силер кылбайн тур силер – Вы не делаете<br>
+             3.Олар кылбайн тур(лар) – Они не делают<br>
+              `,
+              en: `<b>Чаңгыстың саны – singular form</b><br>
+            1.Мен кылбайн тур мен – I don't do<br>
+            2.Сен кылбайн тур сен – You don't do<br>
+            3.Ол кылбайн тур – He/She/It doesn't do<br>
+            Formal/Respectful form to one person. Силер кылбайн тур силер – You don't do<br>
+
+            <b>хөйнүң саны – plural form</b><br>
+            1.Бис кылбайн тур бис – We don't do<br>
+            2.Силер кылбайн тур силер – You don't do<br>
+            3.Олар кылбайн тур(лар) – They don't do<br>
+            `,
             },
           ],
         },
@@ -1923,14 +2455,54 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
             {
               titleRu: "Утвердительная форма",
               titleEn: "Affirmative form",
-              ru: "Мен көрдүм. Сен көрдүң. Ол көрдү. Бис көрдүвүс. Силер көрдүңер. Олар көрдүлер.",
-              en: "I saw. You saw. He saw. We saw. You saw. They saw.",
+              ru: `<b>Чаңгыстың саны – единственное число</b><br>
+            1.Мен көрген мен – Я видел<br>
+            2.Сен көрген сен – Ты видел<br>
+            3.Ол көрген – Он/Она видел(а)<br>
+            Уважительная форма. Силер көрген силер – Вы видели<br>
+              
+              <b>хөйнүң саны – множественное число</b><br>
+             1.Бис көрген бис – Мы видели<br>
+             2.Силер көрген силер – Вы видели<br>
+             3.Олар көрген(нер) – Они видели<br>
+              `,
+              en: `<b>Чаңгыстың саны – singular form</b><br>
+             1.Мен көрген мен – I saw<br>
+             2.Сен көрген сен – You saw<br>
+             3.Ол көрген – He/She/It saw<br>
+             Formal/Respectful form to one person. - Силер көрген силер – You saw<br>
+              
+            <b>хөйнүң саны – plural form</b><br>
+             1.Бис көрген бис – We saw<br>
+             2.Силер көрген силер – You saw<br>
+             3.Олар көрген(нер) – They saw<br>
+              `,
             },
             {
               titleRu: "Отрицательная форма",
               titleEn: "Negative form",
-              ru: "Мен көрбедим. Сен көрбедиң. Ол көрбеди.",
-              en: "I did not see. You did not see. He did not see.",
+              ru: `<b>Чаңгыстың саны – единственное число</b><br>
+          1.Мен көрбээн мен – Я не видел<br>
+          2.Сен көрбээн сен – Ты не видел<br>
+          3.Ол көрбээн – Он/Она не видел(а)<br>
+          Formal/Respectful form to one person. Силер көрбээн силер – Вы не видели<br>
+              
+          <b>хөйнүң саны – множественное число</b><br>
+          1.Бис көрбээн бис – Мы не видели<br>
+          2.Силер көрбээн силер – Вы не видели<br>
+          3.Олар көрбээн(нер) – Они не видели<br>
+              `,
+              en: `<b>Чаңгыстың саны – singular form</b><br>
+          1.Мен көрбээн мен – I didn't see<br>
+          2.Сен көрбээн сен – You didn't see<br>
+          3.Ол көрбээн – He/She/It didn't see<br>
+          Уважительная форма. Силер көрбээн силер – You didn't see<br>
+              
+          <b>хөйнүң саны – plural form</b><br>
+          1.Бис көрбээн бис – We didn't see<br>
+          2.Силер көрбээн силер – You didn't see<br>
+          3.Олар көрбээн(нер) – They didn't see<br>
+              `,
             },
           ],
         },
@@ -1943,14 +2515,125 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
             {
               titleRu: "Утвердительная форма",
               titleEn: "Affirmative form",
-              ru: "Мен кээр мен. Сен кээр сен. Ол кээр. Бис кээр бис. Силер кээр силер. Олар кээр-лер.",
-              en: "I will come. You will come. He will come. We will come. You will come. They will come.",
+              ru: `<b>Чаңгыстың саны – единственное число</b><br>
+          1.Мен келир мен – Я приду<br>
+          2.Сен келир сен – Ты придешь<br>
+          3.Ол келир – Он/она придет<br>
+          Уважительная форма. - Силер келир силер – Вы придете<br>
+              
+          <b>хөйнүң саны – множественное число</b><br>
+         1.Бис келир бис – Мы придем<br>
+         2.Силер келир силер – Вы придете<br>
+         3.Олар келир(лер) – Они придут<br>
+              `,
+              en: `<b>Чаңгыстың саны – singular form</b><br>
+          1.Мен келир мен – I will come<br>
+          2.Сен келир сен – You will come<br>
+          3.Ол келир – He/She/It will come<br>
+          Formal/Respectful form to one person. - Силер келир силер – You will come<br>
+              
+          <b>хөйнүң саны – plural form</b><br>
+          1.Бис келир бис – We will come<br>
+         2.Силер келир силер – You will come<br>
+         3.Олар келир(лер) – They will come<br>
+              `,
             },
             {
               titleRu: "Отрицательная форма",
               titleEn: "Negative form",
-              ru: "Мен алыр мен эвес. Сен алыр сен эвес. Ол алыр эвес.",
-              en: "I will not take. You will not take. He will not take.",
+              ru: `<b>Чаңгыстың саны – единственное число</b><br>
+          1.Мен көрбээн мен – Я не видел<br>
+          2.Сен көрбээн сен – Ты не видел<br>
+          3.Ол көрбээн – Он/Она не видел(а)<br>
+         Уважительная форма. - Силер көрбээн силер – Вы не видели<br>
+              
+          <b>хөйнүң саны – множественное число </b><br>
+          1.Бис көрбээн бис – Мы не видели<br>
+          2.Силер көрбээн силер – Вы не видели<br>
+          3.Олар көрбээн(нер) – Они не видели<br>
+              `,
+              en: `<b>Чаңгыстың саны – singular form</b><br>
+          1.Мен албас мен – I will not take<br>
+          2.Сен албас сен – You will not take<br>
+          3.Ол албас – He/She/It will not take<br>
+           Formal/Respectful form to one person. Силер албас силер – You will not take<br>
+              
+          <b>хөйнүң саны – plural form</b><br>
+         1.Бис албас бис – We will not take<br>
+         2.Силер албас силер – You will not take<br>
+         3.Олар албас(тар) – They will not take<br>
+              `,
+            },
+          ],
+        },
+        {
+          id: "l8-rules",
+          type: "grammar",
+          titleRu: "Общие правила",
+          titleEn: "General rules",
+          rules: [
+            {
+              titleRu: "Общие правила",
+              titleEn: "General rules",
+              ru: `<ol>
+              <li>Во всех приведенных примерах слова <b>мен, сен, бис, силер</b> являются в начале предложения личными местоимениями – подлежащими, отвечающими на вопрос <b>кым? кымнар? – кто?</b>, 
+              а в конце предложения – показателями лица и числа сказуемого, т.е. словами, выполняющими служебную функцию в предложении.</li>
+              <li>Во всех этих предложениях подлежащие могут быть опущены, а показатели лица и числа сказуемого обязательно присутствуют (см. о личных местоимениях в 5-м уроке), например:
+              <ul>
+              <li>Мен көрген мен – Я видел.</li>
+              <li>Көрген мен – Я видел.</li>
+              <li>Силер келир силер – Вы придете.</li>
+              <li>Келир силер – Вы придете.</li>
+              <li>Ол келбээн – Он не пришел.</li>
+              <li>Келбээн – Он не пришел.</li>
+              </ul>
+              </li>
+              </ol>
+              `,
+              en: `<ol>
+              <li>In all the examples given, the words <b>мен, сен, бис, силер</b> are personal pronouns at the beginning of the sentence—subjects answering the question <b>кым? кымнар?—who?</b>, 
+              and at the end of the sentence—they indicate the person and number of the predicate, i.e. Words that perform a functional function in the sentence.</li>
+              <li>In all of these sentences, subjects can be omitted, but the person and number markers of the predicate are always present (see Lesson 5 for personal pronouns), for example:
+              <ul>
+              <li>Мен көрген мен – I saw.</li>
+              <li>Көрген мен – I saw.</li>
+              <li>Силер килир силер – You will come.</li>
+              <li>Килир силер – You will come.</li>
+              <li>Ол кэлбээн – He didn't come.</li>
+              <li>Кэлбээн – He didn't come.</li>
+              </ul>
+              </li>
+              </ol>
+              `,
+            },
+          ],
+        },
+        {
+          id: "l8-ex",
+          type: "exercise",
+          titleRu: "Упражнения",
+          titleEn: "Exercises",
+          exercises: [
+            {
+              titleRu: "Упражнение 1",
+              titleEn: "Exercise 1",
+              instrRu: `Устно и письменно составьте предложения сначала с подлежащими <b>мен, сен, бис, силер</b>, затем – опуская их.<br>
+              Бижиир, бижип тур, бижээн – писать;<br> номчуур, номчуп тур, номчаан – читать;<br> ажылдаар, ажылдап тур, ажылдаан – работать.
+              `,
+              instrEn: `Orally and in writing, make sentences first with the subjects <b>мен, сен, бис, силер</b>, then omitting them.<br> 
+              Бижиир, бижип тур, бижээн - write;<br> номчуур, номчуп тур, номчаан  - read;<br> ажылдаар, ажылдап тур, ажылдаан - work.
+              `,
+            },
+            {
+              titleRu: "Упражнение 2",
+              titleEn: "Exercise 2",
+              instrRu: `Составьте письменно вопросы со словом <b>кажан? – когда?</b>, используя предложения, приведенные как примеры спряжения глаголов будущего и прошедшего времени.<br>
+              <i>Образец 1. Мен келир мен. Кажан мен келир мен? Кажан келир мен? Когда я приду? 2. Мен көрген мен. Кажан мен көрген мен? Кажан көрген мен?</i><br>
+              Дайте устно краткие ответы на поставленные вопросы, пользуясь словами <b>даарта – завтра, бөгүн – сегодня, дүүн – вчера</b>.
+              `,
+              instrEn: `Write questions with the word <b>кажан? – when?</b>, using the sentences given as examples of conjugating future and past tense verbs.<br>
+              <i>Example 1. Мен келир мен. Кажан мен келир мен? Кажан келир мен? Когда я приду? 2. Мен көрген мен. Кажан мен көрген мен? Кажан көрген мен?</i><br>
+              Give short answers to the questions orally, using the words <b>даарта – tomorrow, бөгүн – today, дүүн – yesterday</b>.`,
             },
           ],
         },

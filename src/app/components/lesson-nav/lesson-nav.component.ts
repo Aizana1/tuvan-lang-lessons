@@ -22,6 +22,7 @@ import { Lesson } from "../../core/models/lesson.model";
 export class LessonNavComponent {
   @Input() lessons: Lesson[] = [];
   @Input() activeLessonId = 0;
+  @Input() isOpen = false;
   @Output() lessonSelected = new EventEmitter<number>();
   @Output() sidebarClose = new EventEmitter<void>();
 

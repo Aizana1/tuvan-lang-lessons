@@ -20,6 +20,7 @@ export class AppComponent {
 
   lessons = this.lessonsSvc.getAll();
   sidebarOpen = signal(false);
+  donateOpen = signal(false);
   activeLessonId = signal(0);
 
   constructor() {
