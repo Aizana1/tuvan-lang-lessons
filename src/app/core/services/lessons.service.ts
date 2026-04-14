@@ -1042,7 +1042,7 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
               en: `<ol>Tuvan interrogative sentences are constructed:<li>using the interrogative particle <b>бе?</b> For example, an affirmative sentence: <i>Алыр силер – You will receive (take)<i/>; interrogative: <i>Алыр силер бе? – Will you receive (take)?</i>.</li>
               <li>using the interrogative words <b>кажан? – when?; каяа? – where</b>(to be, to be); <b>кандыг? – what?; кайда? – where</b>(is)<b>? канчап – how</b>(in what way)<b>? чүге? – why?</b>; etc.;
               </li> 
-              <li>in the 3rd person using a question word and the ending <b>-l, (-yl, -il, -ul, -үл)</b>: <i>Адыңар кымыл (кым+ыл)? – What is your name? Чүү херегил (херек+ил)? – What do you need?</i> 
+              <li>in the 3rd person using a question word and the ending <b>-л, (-ыл, -ил, -ул, -үл)</b>: <i>Адыңар кымыл (кым+ыл)? – What is your name? Чүү херегил (херек+ил)? – What do you need?</i> 
               </li> 
               </ol>`,
             },
@@ -1460,21 +1460,32 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
             {
               titleRu: "Таблица местоимений",
               titleEn: "Pronouns table",
-              ru: `1-е л.: мен (я), бис (мы). 2-е л.: сен (ты), силер (вы). 3-е л.: ол (он/она), олар (они).\n
-              <b>Примечание 1.</b> Личные местоимения в именительном падеже обычно используются в роли подлежащего в предложении. 
-              Например: Сен кир – Ты заходи. Силер кириңер – Вы заходите. Бис кирдивис – Мы вошли. Силер кирдиңер – Вы вошли. Ол кирди – Он вошел. Олар кирдилер – Они вошли.\n
-               <b>Примечание 2.</b> В конце предложения слова <b> мен, сен, бис, силер </b> являются показателями лица и числа сказуемого. 
-               Например: Мен ажылдаар мен – Я буду работать. Сен келир сен – Ты придешь. Бис ажылдаар бис – Мы будем работать. Силер чугаалаар силер – Вы скажете. Мен ажылчын
-               мен – Я рабочий. Сен башкы сен – Ты учитель. Силер аныяк силер – Вы молоды. Бис бежелээн бис – Нас пятеро.\n
-               В таких предложениях подлежащее можно опустить (можно сказать: Ажылчын болур мен. Келир сен. Ажылдаар бис. Чугаалаар силер), но употребление показателя лица и числа сказуемого обязательно.
+              ru: `<ul>
+              <li> 1-е л.: мен (я), бис (мы). </li>
+              <li>2-е л.: сен (ты), силер (вы). </li>
+              <li> 3-е л.: ол (он/она), олар (они).</li>
+              </ul>
+            <br>
+              <b>Примечание 1.</b> Личные местоимения в именительном падеже обычно используются в роли подлежащего в предложении. <br>
+              Например: <i>Сен кир – Ты заходи. Силер кириңер – Вы заходите. Бис кирдивис – Мы вошли. Силер кирдиңер – Вы вошли. Ол кирди – Он вошел. Олар кирдилер – Они вошли.<br></i>
+               <b>Примечание 2.</b> В конце предложения слова <b> мен, сен, бис, силер </b> являются показателями лица и числа сказуемого. <br>
+               Например: <i>Мен ажылдаар мен – Я буду работать. Сен келир сен – Ты придешь. Бис ажылдаар бис – Мы будем работать. Силер чугаалаар силер – Вы скажете. Мен ажылчын
+               мен – Я рабочий. Сен башкы сен – Ты учитель. Силер аныяк силер – Вы молоды. Бис бежелээн бис – Нас пятеро.<br></i>
+               В таких предложениях подлежащее можно опустить (можно сказать: <i>Ажылчын болур мен. Келир сен. Ажылдаар бис. Чугаалаар силер</i>), но употребление показателя лица и числа сказуемого обязательно.
               `,
-              en: `1st p.: мен (I), бис (we). 2nd p.: сен (you sing.), силер (you pl./formal). 3rd p.: ол (he/she), олар (they).
-              <b>Note 1.</b> Personal pronouns in the nominative case are usually used as the subject of a sentence. 
-              For example: Се кир – You come in. Силер кириңер – You come in. Бис кирдивис – We came in. Силер кирдиңер – You came in. Ол кирди – He came in. Олар кирделир – They came in.\n
+              en: `
+              <ul>
+              <li> 1st p.: мен (I), бис (we). </li>
+              <li> 2nd p.: сен (you sing.), силер (you pl./formal). </li>
+              <li> 3rd p.: ол (he/she), олар (they).</li>
+              </ul>
+              <br>
+              <b>Note 1.</b> Personal pronouns in the nominative case are usually used as the subject of a sentence.  <br>
+              For example: <i>Сен кир – You come in. Силер кириңер – You come in. Бис кирдивис – We came in. Силер кирдиңер – You came in. Ол кирди – He came in. Олар кирдилер – They came in.<br></i>
               <b>Note 2.</b> At the end of a sentence, the words <b>мен, сен, бис, силер</b> indicate the person and number of the predicate.
-              For example: Ме ажылдаар мен – I will work. Се килир сен – You will come. Бис ажылдаар бис – We will work. Селер чугаалаар силер – You will say. Ме ажылчын
-              мен – I am a worker. Се башкы сен – You are a teacher. Siler anyyak Siler - You are young. Bis bezheleen bis – There are five of us.\n 
-              In such sentences, the subject can be omitted (you can say: Azhylchyn bolur men. Kelir sen. Azhyldaar bis. Chugaalaar Siler), but the use of person and number indicators of the predicate is mandatory.`,
+              For example: <i>Мен ажылдаар мен – I will work. Сен килир сен – You will come. Бис ажылдаар бис – We will work. Силер чугаалаар силер – You will say. Мен ажылчын
+              мен – I am a worker. Сен башкы сен – You are a teacher. Силер аныяк силер  - You are young.  Бис бежелээн бис – There are five of us.<br></i>
+              In such sentences, the subject can be omitted (you can say: <i>Ажылчын болур мен. Келир сен. Ажылдаар бис. Чугаалаар силер</i>), but the use of person and number indicators of the predicate is mandatory.`,
             },
           ],
         },
@@ -1680,21 +1691,21 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
               titleRu: "Гармония гласных",
               titleEn: "Vowel Harmony",
               ru: `Важное значение в тувинском языке имеет деление гласных на две группы по характеру их произношения: <br>
-              а) группа мягкорядных гласных, произносимых передней частью спинки языка – <b>э, и, ө, ү, ээ, ии, өө, үү, эъ, иъ, өъ, үъ<b>;
-              б) группа твердорядных гласных, произносимых задней частью спинки языка – <b>а, ы, о, у, аа, ыы, оо, уу, аъ, ыъ, оъ, уъ<b>.<br>
+              а) группа мягкорядных гласных, произносимых передней частью спинки языка – <b>э, и, ө, ү, ээ, ии, өө, үү, эъ, иъ, өъ, үъ</b>;
+              б) группа твердорядных гласных, произносимых задней частью спинки языка – <b>а, ы, о, у, аа, ыы, оо, уу, аъ, ыъ, оъ, уъ</b>.<br>
               Гармония гласных означает возможность или невозможность сочетания тех или иных гласных в пределах слова. Основные положения гармонии гласных тувинского языка гласят:
               <ol>
-              <li>если в первом слоге имеется какой-нибудь гласный мягкого ряда (э, ээ, эъ, и, ии, иъ, ө, өө, өъ, ү, үү, үъ), то в последующих слогах могут употребляться только гласные мягкого ряда: эм – лекарство, эмнер – лекарства, эмнеривис – наши лекарства;</li>
-              <li>если в первом слоге слова имеется какой-нибудь гласный твердого ряда (а, аа, аъ, ы, ыы, ыъ, о, оо, оъ, у, уу, уъ), то в последующих слогах могут употребляться только гласные твердого ряда: хол – рука, холум – моя рука, холдарым – мои руки.</li>
+              <li>если в первом слоге имеется какой-нибудь гласный мягкого ряда <b>(э, ээ, эъ, и, ии, иъ, ө, өө, өъ, ү, үү, үъ)</b>, то в последующих слогах могут употребляться только гласные мягкого ряда: эм – лекарство, эмнер – лекарства, эмнеривис – наши лекарства;</li>
+              <li>если в первом слоге слова имеется какой-нибудь гласный твердого ряда <b>(а, аа, аъ, ы, ыы, ыъ, о, оо, оъ, у, уу, уъ)</b>, то в последующих слогах могут употребляться только гласные твердого ряда: хол – рука, холум – моя рука, холдарым – мои руки.</li>
               </ol>
               `,
               en: `In the Tuvan language, the division of vowels into two groups based on their pronunciation is important: <br>
-              a) the group of soft vowels, pronounced with the front of the tongue – <b>э, и, ө, ү, ээ, ии, өө, үү, эъ, иъ, өъ, үъ<b>;
-              b) the group of hard vowels, pronounced with the back of the tongue – <b>а, ы, о, у, аа, ыы, оо, уу, аъ, ыъ, оъ, уъ<b>.<br>
+              a) the group of soft vowels, pronounced with the front of the tongue – <b>э, и, ө, ү, ээ, ии, өө, үү, эъ, иъ, өъ, үъ</b>;
+              b) the group of hard vowels, pronounced with the back of the tongue – <b>а, ы, о, у, аа, ыы, оо, уу, аъ, ыъ, оъ, уъ</b>.<br>
               Vowel harmony refers to the possibility or impossibility of combining certain vowels within a word. The basic principles of vowel harmony in the Tuvan language are as follows:
               <ol>
-              <li>If the first syllable contains a soft vowel (э, ээ, эъ, и, ии, иъ, ө, өө, өъ, ү, үү, үъ), then only soft vowels may be used in subsequent syllables: эм – medicine, эмнер – medicines, эмнеривис – our medications;</li>
-              <li>If the first syllable of a word contains a hard vowel (а, аа, аъ, ы, ыы, ыъ, о, оо, оъ, у, уу, уъ), then only hard vowels may be used in subsequent syllables: хол – hand, холум – my hand, холдарым – my hands.</li>
+              <li>If the first syllable contains a soft vowel <b>(э, ээ, эъ, и, ии, иъ, ө, өө, өъ, ү, үү, үъ)</b>, then only soft vowels may be used in subsequent syllables: эм – medicine, эмнер – medicines, эмнеривис – our medications;</li>
+              <li>If the first syllable of a word contains a hard vowel <b>(а, аа, аъ, ы, ыы, ыъ, о, оо, оъ, у, уу, уъ)</b>, then only hard vowels may be used in subsequent syllables: хол – hand, холум – my hand, холдарым – my hands.</li>
               </ol>`,
             },
           ],
@@ -2046,19 +2057,19 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
               `,
               en: `<ol> 
               There are 7 cases in the Tuvan language: 
-              <li><b>adaarynyn cases</b> (nominative case) <i>kym? what? </i>(who? what?) – kizhi (person), oruk (road), dash (stone), khol (hand);</li> 
-              <li><b>hamaaryshtyrarynyn cases</b> (genitive case) – <i>kymnyn? chunun?</i> (whom? what? whose?) – kizhinin, oruktun, dashtyn holdun;</li> 
-              <li><b>onaarynyn cases</b> (accusative case) – <i>kymny? what? </i>(who? what?) – kizhini, oruktu, dashty, holdu;</li> 
-              <li><b>beerinin cases</b> (dative case) – <i>kymga? chүge?</i>(to whom? what?) – kizhige, orukka, dashka, kholga; </li> 
-              <li><b>turarynyn cases</b> (local case) – <i>kymda? chude?</i>(from whom? from what? where?) – kizhide, orukta, dashta, holda;</li> 
-              <li><b>үnerinѣ cases</b> (initial case) – <i>kymdan? wonderful? kayyn? </i> (from whom? from what? where from?) – kizhiden, oruktan, dashtan, holdan;</li> 
-              <li><b>uglaarynyn cases</b> (directive case) – <i>kymche? someone else? kainaar? </i> (to whom? to what? where?) – kizhizhe, orukche, dashche, kholche. </li> 
+              <li><b>адаарының падежи</b> (nominative case) <i>кым? чүү? </i>(who? what?) – кижи (person), орук (road), даш (stone), хол (hand);</li> 
+              <li><b>хамаарыштырарының падежи</b> (genitive case) – <i>кымның? чүнүң?</i> (whom? what? whose?) – кижиниң, оруктуң, даштың холдуң;</li> 
+              <li><b>онаарының падежи</b> (accusative case) – <i>кымны? чүнү?</i>(who? what?) – кижини, орукту, дашты, холду;</li> 
+              <li><b>бээриниң падежи</b> (dative case) – <i>кымга? чүге?</i>(to whom? what?) – кижиге, орукка, дашка, холга; </li> 
+              <li><b>турарының падежи</b> (local case) – <i>кымда? чүде?</i>(from whom? from what? where?) – кижиде, орукта, дашта, холда;</li> 
+              <li><b>үнериниң падежи</b> (initial case) – <i>кымдан? чүден? кайыын? </i> (from whom? from what? where from?) – кижиден, оруктан, даштан, холдан;</li> 
+              <li><b>углаарының падежи</b> (directive case) – <i>кымче? чүүже? кайнаар? </i> (to whom? to what? where?) – кижиже, орукче, дашче, холче. </li> 
               </ol> 
               
               <ol> Remember: 
-              <li>Questions <b>kym?</b> (who?), <b>kymnyң? </b>(who?), <b>kymny? </b>(who?), <b>kymga? </b>(to whom?) <b>kymda? </b>(from whom?), <b>kymdan? </b>(from whom?), <b>kymche? </b>(to whom?) are used only in relation to a person.</li> 
-              <li>Questions <b>chүү?</b> (what?),<b>chүүң? </b>(what? whose?), <b>chүnү? </b>(what?), <b>what?</b> (what?), <b>why? </b>(at what? where?), <b>wonderful? </b>(from what? where from?), <b>үүже</b> (to what? where?) are used in relation to everything living and nonliving, except humans, 
-              for example: what? (what?) – dash (stone), inek (cow), adyg (bear); chunun? (what? whose?) – dashtyn, inektin, adygnyn; what? (what?) – dashty, inekti, adygny, etc.</li> 
+              <li>Questions <b>кым?</b> (who?), <b>кымның? </b>(who?), <b>кымны? </b>(who?), <b>кымга? </b>(to whom?) <b>кымда? </b>(from whom?), <b>кымдан? </b>(from whom?), <b>кымче? </b>(to whom?) are used only in relation to a person.</li> 
+              <li>Questions <b>чүү?</b> (what?),<b>чүнүң? </b>(what? whose?), <b>чүнү? </b>(what?), <b>чүге?</b> (to what?), <b>чүде? </b>(at what? where?), <b>чүден? </b>(from what? where from?), <b>чүүже</b> (to what? where?) are used in relation to everything living and nonliving, except humans, 
+              for example: чүү? (what?) – даш (stone), инек (cow), адыг (bear); чүнүң? (what? whose?) – даштың, инектиң, адыгның; чүнү? (what?) – дашты, инекти, адыгны, etc.</li> 
               </ol>`,
             },
           ],
