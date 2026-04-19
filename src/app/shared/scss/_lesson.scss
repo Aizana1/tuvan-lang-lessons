@@ -199,6 +199,39 @@
     font-weight: 600;
     color: var(--color-primary);
   }
+
+  .decl-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    margin-top: 0.25rem;
+    overflow-x: auto;
+    display: block;
+
+    th, td {
+      padding: 0.4rem 0.7rem;
+      border: 1px solid var(--border, #d0c8f0);
+      text-align: left;
+      line-height: 1.4;
+    }
+
+    th {
+      background: var(--blue);
+      color: #fff;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    tr:nth-child(even) td {
+      background: rgba(0, 0, 0, 0.03);
+    }
+
+    td:first-child {
+      font-weight: 600;
+      white-space: nowrap;
+      color: var(--blue);
+    }
+  }
 }
 
 // ─── PHRASES ───────────────────────────────────────────────────────────────

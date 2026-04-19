@@ -2662,49 +2662,165 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
         {
           id: "l9-qa",
           type: "phrases",
-          titleRu: "Вопросы кым? кымга?",
-          titleEn: "Questions кым? кымга?",
+          titleRu: "Кымга? – Кому? К кому?",
+          titleEn: "Questions Кымга?",
           phrases: [
             {
-              tuvan: "Кымга кээдиңер?",
+              tuvan: "Кымга келдиңер?",
               ru: "К кому вы пришли?",
               en: "Whom did you come to?",
               audioSrc: "",
             },
             {
-              tuvan: "Силерге кээдим.",
-              ru: "Я пришёл(а) к вам.",
+              tuvan: "Силерге келдим",
+              ru: "Я пришёл(а) к вам",
               en: "I came to you.",
               audioSrc: "",
             },
             {
-              tuvan: "Кымны дилеп тур сен?",
-              ru: "Кого ты ищешь?",
+              tuvan: "Кымга чедерил?",
+              ru: "Кому адресовано?",
+              en: "To whom is it addressed?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Даргага чедер",
+              ru: "Начальнику (директору) адресовано",
+              en: "Addressed to the boss (director)",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кымга дагзырыл?",
+              ru: "Кому поручить?",
+              en: "Who should I entrust it to?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Эш Кыргыска дагзыр-дыр",
+              ru: "Давайте поручим товарищу Кыргысу",
+              en: "Let's entrust it to comrade Kyrgyz",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Меңээ дагзып көрүңер",
+              ru: "Прошу поручить мне",
+              en: "Please entrust it to me.",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кымга даастыңар?",
+              ru: "Кому вы поручили?",
+              en: "Who did you entrust it to?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Эш Кыргыска дааскан бис",
+              ru: "Поручили мы товарищу Кыргысу",
+              en: "We entrusted comrade Kyrgyz",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Меңээ дааскан",
+              ru: "Поручено мне",
+              en: "Entrusted to me",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кымга сөс бээрил?",
+              ru: "Кому дать слово?",
+              en: "Who should I give the floor to?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Меңээ сөстен бериңер!",
+              ru: "Дайте мне слово!",
+              en: "Give the floor to me",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Чугаалап болур ирги бе?",
+              ru: "Можно мне высказаться?",
+              en: "Can I speak out?",
+              audioSrc: "",
+            },
+          ],
+        },
+        {
+          id: "l9-qa",
+          type: "phrases",
+          titleRu: "Кымны? – Кого?",
+          titleEn: "Question Кымны?",
+          phrases: [
+            {
+              tuvan: "Кымны сураглап (дилеп) чор силер?",
+              ru: "Кого вы ищете?",
               en: "Who are you looking for?",
               audioSrc: "",
             },
             {
-              tuvan: "Сөс берим!",
-              ru: "Дайте мне слово!",
-              en: "Give me the floor!",
+              tuvan: "Эш Кыргысты сураглап чор мен",
+              ru: "Мне нужен товарищ Кыргыс",
+              en: "I need a comrade Kyrgyz",
               audioSrc: "",
             },
             {
-              tuvan: "Чугаалап болур мен бе?",
-              ru: "Можно мне высказаться?",
-              en: "May I speak?",
+              tuvan: "Эш Иванов мында ирги бе?",
+              ru: "Товарищ Иванов здесь (у вас)?",
+              en: "Is Comrade Ivanov here (with you)?",
               audioSrc: "",
             },
             {
-              tuvan: "Кымга дааскынны бэрим?",
-              ru: "Кому дать задание?",
-              en: "Who should be given the task?",
+              tuvan: "Кымны келдирерил?",
+              ru: "Кого пригласить (вызвать)?",
+              en: "Who should I invite (call)?",
               audioSrc: "",
             },
             {
-              tuvan: "Кымны соңгуурун санал-оналдаар сен?",
-              ru: "Кого предлагаешь избрать?",
+              tuvan: "Эш Ивановту келдирип көрүңер",
+              ru: "Прошу пригласить (вызвать) товарища Иванова",
+              en: "Please invite (call) comrade Ivanov",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Эш Кыргысты",
+              ru: "Товарища Кыргыса",
+              en: "Comrade Kyrgys",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кымны саналдаар силер?",
+              ru: "Кого вы предлагаете избрать?",
               en: "Who do you propose to elect?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Эш Кыргысты саналдап тур мен",
+              ru: "Предлагаю избрать товарища Кыргыса",
+              en: "I propose to elect comrade Kyrgyz",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Эш Ивановту соңгуур-дур",
+              ru: "Изберем товарища Иванова",
+              en: "Let's elect Comrade Ivanov",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Кымны депшидер бис? ",
+              ru: "Кого выдвинем?",
+              en: "Who shall we nominate?",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Эш Ивановту депшидер-дир",
+              ru: "Выдвинем товарища Иванова",
+              en: "Let's nominate Comrade Ivanov",
+              audioSrc: "",
+            },
+            {
+              tuvan: "Эш Кыргысты саналдап тур мен",
+              ru: "Предлагаю выдвинуть товарища Кыргыса",
+              en: "I propose to nominate Comrade Kyrgys",
               audioSrc: "",
             },
           ],
@@ -2716,28 +2832,95 @@ Weak consonants are used in any position and can be voiceless or voiced, dependi
           titleEn: "Declension of Personal Pronouns",
           rules: [
             {
-              titleRu: "Мен (я)",
-              titleEn: "Мен — I",
-              ru: "Им. мен. Род. мээң. Дат. меңге. Вин. мени. Мест. менде. Исх. менден. Напр. меңге.",
-              en: "Nom. мен. Gen. мээң. Dat. меңге. Acc. мени. Loc. менде. Abl. менден. Dir. меңге.",
+              titleRu: "Единственное число (чаңгыстың саны)",
+              titleEn: "Singular (чаңгыстың саны)",
+              ru: `<table class="decl-table">
+              <thead><tr><th>Падеж</th><th>Мен — я</th><th>Сен — ты</th><th>Ол — он, она, оно</th></tr></thead>
+              <tbody>
+              <tr><td>А.п.</td><td>мен</td><td>сен</td><td>ол</td></tr>
+              <tr><td>Х.п.</td><td>мээң — мой, моя</td><td>сээң — твой, твоя, твоё</td><td>ооң — его, её</td></tr>
+              <tr><td>Б.п.</td><td>меңээ — мне</td><td>сеңээ — тебе</td><td>аңаа — ему, ей</td></tr>
+              <tr><td>О.п.</td><td>мени — меня</td><td>сени — тебя</td><td>ону — его, её</td></tr>
+              <tr><td>Т.п.</td><td>менде — у меня</td><td>сенде — у тебя</td><td>ында — у него, у неё</td></tr>
+              <tr><td>Ү.п.</td><td>менден — от меня</td><td>сенден — от тебя</td><td>оон — от него, от неё</td></tr>
+              <tr><td>У.п.</td><td>менче — ко мне</td><td>сенче — к тебе</td><td>олче — к нему, к ней</td></tr>
+              </tbody>
+              </table> <br>
+              
+              <b>Примечание 1.</b> Вопросы и ответы на них, склонение существительных, местоимений, спряжение глаголов необходимо просто запомнить; при этом обратите внимание на оформление слов в зависимости от характера последнего звука слова.<br>
+              <b>Примечание 2.</b> Старайтесь творчески подойти к запоминаемому материалу – при помощи известных вам слов делайте допустимые сочетания со склоняемыми и
+              спрягаемыми словами (уточняйте допустимость сочетания слов у знающих язык); на вопросы давайте свои варианты ответов; расширяйте вопросы путем введения дополнительных слов, выражений, обращений.
+              `,
+              en: `<table class="decl-table">
+              <thead><tr><th>Case</th><th>Мен — I</th><th>Сен — you (sg.)</th><th>Ол — he / she / it</th></tr></thead>
+              <tbody>
+              <tr><td>Nom.</td><td>мен</td><td>сен</td><td>ол</td></tr>
+              <tr><td>Gen.</td><td>мээң — my</td><td>сээң — your</td><td>ооң — his / her / its</td></tr>
+              <tr><td>Dat.</td><td>меңээ — to me</td><td>сеңээ — to you</td><td>аңаа — to him / her / it</td></tr>
+              <tr><td>Acc.</td><td>мени — me</td><td>сени — you</td><td>ону — him / her / it</td></tr>
+              <tr><td>Loc.</td><td>менде — at me</td><td>сенде — at you</td><td>ында — at him / her / it</td></tr>
+              <tr><td>Abl.</td><td>менден — from me</td><td>сенден — from you</td><td>оон — from him / her / it</td></tr>
+              <tr><td>Dir.</td><td>менче — toward me</td><td>сенче — toward you</td><td>олче — toward him / her</td></tr>
+              </tbody>
+              </table><br>
+              
+              <b>Note 1.</b> Questions and answers, declension of nouns, pronouns, and verb conjugation simply need to be memorized. Pay attention to the formation of words based on the nature of the final sound of the word.<br>
+              <b>Note 2.</b> Try to be creative with the material you are memorizing – use words you know to create acceptable combinations with declinable and conjugated words (check with those who know the language for acceptable combinations); provide your own answers to questions; expand on questions by introducing additional words, expressions, and forms of address.`,
             },
             {
-              titleRu: "Силер (вы)",
-              titleEn: "Силер — you (pl.)",
-              ru: "Им. силер. Род. силерниң. Дат. силерге. Вин. силерни. Мест. силерде. Исх. силерден. Напр. силерже.",
-              en: "Nom. силер. Gen. силерниң. Dat. силерге. Acc. силерни. Loc. силерде. Abl. силерден. Dir. силерже.",
+              titleRu: "Множественное число (хөйнүң саны)",
+              titleEn: "Plural (хөйнүң саны)",
+              ru: `<table class="decl-table">
+              <thead><tr><th>Падеж</th><th>Бис — мы</th><th>Силер — вы</th><th>Олар — они</th></tr></thead>
+              <tbody>
+              <tr><td>А.п.</td><td>бис</td><td>силер</td><td>олар</td></tr>
+              <tr><td>Х.п.</td><td>бистиң — наш, наша, наше</td><td>силерниң — ваш, ваша, ваше</td><td>оларның — их</td></tr>
+              <tr><td>Б.п.</td><td>биске — нам, к нам</td><td>силерге — вам, к вам</td><td>оларга — им, к ним</td></tr>
+              <tr><td>О.п.</td><td>бисти — нас</td><td>силерни — вас</td><td>оларны — их</td></tr>
+              <tr><td>Т.п.</td><td>бисте — у нас</td><td>силерде — у вас</td><td>оларда — у них</td></tr>
+              <tr><td>Ү.п.</td><td>бистен — от нас</td><td>силерден — от вас</td><td>олардан — от них</td></tr>
+              <tr><td>У.п.</td><td>биске — к нам</td><td>силерже — к вам</td><td>оларже — к ним</td></tr>
+              </tbody>
+              </table>`,
+              en: `<table class="decl-table">
+              <thead><tr><th>Case</th><th>Бис — we</th><th>Силер — you (pl.)</th><th>Олар — they</th></tr></thead>
+              <tbody>
+              <tr><td>Nom.</td><td>бис</td><td>силер</td><td>олар</td></tr>
+              <tr><td>Gen.</td><td>бистиң — our</td><td>силерниң — your</td><td>оларның — their</td></tr>
+              <tr><td>Dat.</td><td>биске — to us</td><td>силерге — to you</td><td>оларга — to them</td></tr>
+              <tr><td>Acc.</td><td>бисти — us</td><td>силерни — you</td><td>оларны — them</td></tr>
+              <tr><td>Loc.</td><td>бисте — at us</td><td>силерде — at you</td><td>оларда — at them</td></tr>
+              <tr><td>Abl.</td><td>бистен — from us</td><td>силерден — from you</td><td>олардан — from them</td></tr>
+              <tr><td>Dir.</td><td>биске — toward us</td><td>силерже — toward you</td><td>оларже — toward them</td></tr>
+              </tbody>
+              </table>`,
+            },
+          ],
+        },
+        {
+          id: "l9-ex",
+          type: "exercise",
+          titleRu: "Упражнения",
+          titleEn: "Exercises",
+          exercises: [
+            {
+              titleRu: "Упражнение 1",
+              titleEn: "Exercise 1",
+              instrRu: `Переведите на русский язык. <br>
+              <i>Экии! Кирип болур бе? Эш Ивановту хереглеп чор мен. Дөрт шакта келир бе? Даарта катап келир мен. Эш Ивановка ынча деп дамчыдып көрүңер.</i>
+              `,
+              instrEn: `Translate into English.<br> 
+               <i>Экии! Кирип болур бе? Эш Ивановту хереглеп чор мен. Дөрт шакта келир бе? Даарта катап келир мен. Эш Ивановка ынча деп дамчыдып көрүңер.</i>
+              `,
             },
             {
-              titleRu: "Бис (мы)",
-              titleEn: "Бис — we",
-              ru: "Им. бис. Род. бистиң. Дат. биске. Вин. бисти. Мест. бисте. Исх. бистен. Напр. биске.",
-              en: "Nom. бис. Gen. бистиң. Dat. биске. Acc. бисти. Loc. бисте. Abl. бистен. Dir. биске.",
-            },
-            {
-              titleRu: "Ол (он/она)",
-              titleEn: "Ол — he/she",
-              ru: "Им. ол. Род. ооң. Дат. аңаа. Вин. ону. Мест. анда. Исх. андан. Напр. аңаа.",
-              en: "Nom. ол. Gen. ооң. Dat. аңаа. Acc. ону. Loc. анда. Abl. андан. Dir. аңаа.",
+              titleRu: "Упражнение 2",
+              titleEn: "Exercise 2",
+              instrRu: `Переведите на тувинский язык.<br>
+              <i>Можно вам задать вопрос? Сколько человек здесь работает? Я из школы. Работаю учителем русского языка. До свидания!</i>
+              `,
+              instrEn: `Translate into Tuvan.<br>
+              <i>Can I ask you a question? How many people work here? I'm from school. I teach Russian. Goodbye!</i>`,
             },
           ],
         },
