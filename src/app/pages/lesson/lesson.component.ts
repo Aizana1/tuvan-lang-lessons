@@ -38,27 +38,31 @@ export class LessonComponent {
       const l = this.lesson();
       if (!l) return;
 
-      // Заголовок вкладки
+      const isEn = this.langSvc.lang() === 'en';
+      const lessonTitle = isEn ? l.titleEn : l.titleRu;
+      const lessonSub   = isEn ? l.subEn   : l.subRu;
+
       this.title.setTitle(
-        `${l.titleRu} - Тыва дыл — Тувинский язык - Tuvan Language`
+        `${lessonTitle}: ${lessonSub} — Уроки тувинского языка`
       );
 
-      // Мета-описание
-      this.meta.updateTag({
-        name: "description",
-        content: `${l.titleRu}. Тувинский язык — урок ${l.id}: ${l.titleRu}`,
-      });
+      const description = isEn
+        ? `Lesson ${l.id} of Tuvan language: ${lessonSub}. Free interactive Tuvan lessons with audio, phrases and vocabulary.`
+        : `Урок ${l.id} тувинского языка: ${lessonSub}. Бесплатные интерактивные уроки тувинского с аудио, фразами и словарём.`;
 
-      // Canonical URL
-      this.meta.updateTag({
-        property: "og:url",
-        content: `https://твой-домен.com/lesson/${l.id}`,
-      });
+      this.meta.updateTag({ name: 'description', content: description });
+      this.meta.updateTag({ property: 'og:title',       content: `${lessonTitle}: ${lessonSub} — Тывалап` });
+      this.meta.updateTag({ property: 'og:description', content: description });
+      this.meta.updateTag({ property: 'og:url',         content: `https://tuvan-language.space/lesson/${l.id}` });
 
-      this.meta.updateTag({
-        property: "og:title",
-        content: `${l.titleRu} — Тыва дыл — Тувинский язык - Tuvan Language`,
-      });
+      // Canonical
+      let canonical = document.querySelector('link[rel="canonical"]');
+      if (!canonical) {
+        canonical = document.createElement('link');
+        (canonical as HTMLLinkElement).rel = 'canonical';
+        document.head.appendChild(canonical);
+      }
+      (canonical as HTMLLinkElement).href = `https://tuvan-language.space/lesson/${l.id}`;
     });
 
     effect(() => {
